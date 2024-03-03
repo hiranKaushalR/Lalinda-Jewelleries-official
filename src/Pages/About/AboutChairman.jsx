@@ -1,14 +1,17 @@
 import React from "react";
-import { homeAbout } from "../../assets";
+import { aboutChairman } from "../../assets";
 
-function HomeAbout() {
+function AboutChairman() {
   return (
-    <section className="home-container--about">
-      <div className="home-container--about--header">
-        <h1>STORY OF LALINDA JEWELLERIES</h1>
+    <div className="about-container--chairman">
+      <div className="about-container--chairman--header">
+        <h1>About Our Chairman</h1>
       </div>
-      <div className="home-container--about--body">
-        <img src={homeAbout} alt="" />
+      <div className="about-container--chairman--body">
+        <div className="about-container--chairman--body--avatar">
+          <img src={aboutChairman} alt="" />
+          <p className="chairman-name">MR. PAMIL LALINDA</p>
+        </div>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -21,8 +24,8 @@ function HomeAbout() {
           including versions of Lorem Ipsum.
         </p>
       </div>
-    </section>
+    </div>
   );
 }
 
-export default HomeAbout;
+export default AboutChairman;

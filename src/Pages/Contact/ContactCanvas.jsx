@@ -1,8 +1,13 @@
 import React from 'react'
+import ContactHead from './ContactHead'
+import ContactBody from './ContactBody'
 
 function ContactCanvas() {
   return (
-    <div>ContactCanvas</div>
+    <div className='contact-container'>
+      <ContactHead />
+      <ContactBody />
+    </div>
   )
 }
 

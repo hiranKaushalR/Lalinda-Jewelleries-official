@@ -28,7 +28,7 @@ body {
     ul {
       display: flex;
       list-style-type: none;
-      gap: 2.2rem;
+      gap: 34px;
       font-size: 1.05rem;
       font-family: "Poppins", sans-serif;
 
@@ -80,7 +80,7 @@ body {
 
     &--description {
       h1 {
-        font-size: 2rem;
+        font-size: 32px;
       }
 
       p {
@@ -126,14 +126,17 @@ body {
 
 // ./src/Pages/Home
 .home-container {
+  // HomeAbout.jsx Component
   &--about {
-    margin: 1rem 10%;
+    margin: 38px 10%;
 
     &--header {
       h1 {
-        position: relative; // Establishes positioning context
+        position: relative;
         font-size: 2.2rem;
-        width: 100%; // Full width
+        width: 100%;
+        padding: 0 0 15px 0;
+        margin: 0 0 35px 0;
 
         &::after {
           content: "";
@@ -141,22 +144,209 @@ body {
           bottom: 0;
           left: 0;
           width: 250px;
-          height: 3px;
+          height: 4px;
           background-color: #df8931;
         }
       }
     }
     &--body {
       display: flex;
-      justify-content: space-evenly;
+      gap: 32px;
       img {
-        width: 500px;
-        // height: 550px
+        max-width: 592px;
       }
       p {
-        max-width: 500px;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: justify;
+        font-family: "poppins", sans-serif;
+      }
+    }
+  }
+
+  // HomeJewelleries.jsx
+  &--jewelleries {
+    &--header {
+      h1 {
+        font-size: 32px;
+        font-weight: bold;
+        font-family: "poppins", sans-serif;
+        text-align: center;
+        padding: 50px 0;
+      }
+    }
+  }
+
+  // HomeOffers.jsx
+  &--offers {
+    img {
+      height: 617px;
+    }
+  }
+
+  // HomeNewCollection.jsx
+  &--new-collection {
+    &--header {
+      h1 {
+        font-size: 32px;
+        font-family: "poppins", sans-serif;
+        padding: 2rem 0;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+
+  // HomeJewelleryCollection.jsx
+  &--jewellery-collection {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// ./src/Pages/About
+// AboutCanvas.jsx
+.about-container {
+  &--body {
+    &--bg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(./assets/about-background.png);
+      height: 347px;
+      background-repeat: no-repeat;
+
+      h1 {
+        font-size: 4rem;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+
+    &--about {
+      margin: 24px 12%;
+
+      p {
+        font-size: 1.5rem;
         text-align: justify;
       }
+    }
+  }
+
+  &--chairman {
+    margin: 58px 12%;
+
+    &--header {
+      h1 {
+        position: relative;
+        font-size: 2.2rem;
+        width: 100%;
+        padding: 0 0 15px 0;
+        margin: 0 0 35px 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 150px;
+          height: 4px;
+          background-color: #df8931;
+        }
+      }
+    }
+
+    &--body {
+      display: flex;
+      gap: 32px;
+
+      &--avatar {
+        width: 350px;
+
+        img {
+          width: 100%;
+          border-radius: 999px;
+        }
+        .chairman-name {
+          width: 100%;
+          font-size: 24px;
+          font-family: "poppins", sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px auto;
+        }
+      }
+
+      p {
+        width: 1000px;
+        text-align: justify;
+        font-family: "poppins", sans-serif;
+        font-size: 22px;
+        line-height: 35px;
+      }
+    }
+  }
+}
+
+// ./src/Service/ServiceCanvas
+.service-container {
+  &--head {
+    background-image: url(./assets/service-background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 347px;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-size: 48px;
+      font-family: "poppins", sans-serif;
+      color: #ffffff;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  &--body {
+    margin: 32px 15%;
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+
+    &--child {
+      img {
+        width: 174px;
+        margin: auto;
+      }
+
+      p {
+        width: 500px;
+        text-align: center;
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+.contact-container {
+  &--head {
+    background-image: url(./assets/contact-background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 347px;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-size: 48px;
+      font-family: "poppins", sans-serif;
+      color: #ffffff;
+      text-align: center;
+      font-weight: 600;
     }
   }
 }

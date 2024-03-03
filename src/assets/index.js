@@ -14,5 +14,21 @@ export { heroSlider1, heroSlider2, heroSlider3 };
 // Others in Home
 import homeAbout from "./home-about.png";
 import JewelleryCollection from "./Jewellery-collection.png";
+import offers from './offers.png'
 
-export { homeAbout, JewelleryCollection };
+export { homeAbout, JewelleryCollection, offers };
+
+// BG and Chairman in about page
+import aboutBackground from './about-background.png'
+import aboutChairman from './about-chairman.png'
+
+export {aboutBackground, aboutChairman}
+
+// BG and icons in service Page
+import serviceBackground from './service-background.png'
+import service1 from './service-1.png'
+import service2 from './service-2.png'
+import service3 from './service-3.png'
+import service4 from './service-4.png'
+
+export {serviceBackground, service1, service2, service3, service4}
