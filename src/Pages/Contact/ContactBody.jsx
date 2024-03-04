@@ -12,7 +12,7 @@ function ContactBody() {
           </div>
         ))}
       </div>
-      <form>
+      <form className="outline-none">
         <div className="form-first-half">
           <div className="form-first-half-name">
             <label htmlFor="name">Name</label>
@@ -24,19 +24,22 @@ function ContactBody() {
           </div>
         </div>
         <div className="form-second-half">
-          <div className="">
+          <div className="form-second-half-mobile">
             <label htmlFor="mobile-number">Mobile Number</label>
-            <input type="number" name="mobile-number" id="mobile-number" />
+            <input type="number" name="mobile-number"    id="mobile-number" />
           </div>
-          <div className="">
+          <div className="form-second-half-email">
             {" "}
             <label htmlFor="email">Email</label>
             <input type="email" name="email" id="email" />
           </div>
-          <div className="">
+          <div className="form-second-half-message">
             {" "}
             <label htmlFor="message">Message</label>
             <input type="text" id="message" />
+          </div>
+          <div className="form-second-half-send">
+            <button type="button">Send Message</button>
           </div>
         </div>
       </form>

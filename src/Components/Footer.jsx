@@ -17,8 +17,8 @@ function Footer() {
         </div>
         <div className="footer-container--body--socialmedia">
           {socialMedia.map((social) => (
-            <a href={social.link} target="_blank">
-              <img src={social.img} key={social.id} alt="" />
+            <a href={social.link} target="_blank" key={social.id}>
+              <img src={social.img}  alt="" />
             </a>
           ))}
         </div>

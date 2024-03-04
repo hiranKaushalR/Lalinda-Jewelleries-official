@@ -1,6 +1,7 @@
 import { heroSlider1, heroSlider2, heroSlider3 } from "../assets";
 import { facebook, instargram } from "../assets";
 import { service1, service2, service3, service4 } from "../assets";
+import { ring, bracelet, chain } from "../assets";
 
 // Links and other informations
 const facebookLink = "https://www.facebook.com/";
@@ -67,18 +68,61 @@ export const services = [
 
 export const contactDetails = [
   {
-    id: 'contact-type-1',
-    type: 'Mobile',
-    detail: contactNumber
+    id: "contact-type-1",
+    type: "Mobile",
+    detail: contactNumber,
   },
   {
-    id: 'contact-type-2',
-    type: 'E-Mail',
-    detail: email
+    id: "contact-type-2",
+    type: "E-Mail",
+    detail: email,
   },
   {
-    id: 'contact-type-3',
-    type: 'Address',
-    detail: address
+    id: "contact-type-3",
+    type: "Address",
+    detail: address,
   },
-]
+];
+
+export const items = [
+  {
+    id: "item-1",
+    name: "Ring",
+    img: ring,
+    type: 'ring',
+    price: 85000,
+    isStock: true,
+    hasoffer: false,
+    stockPrice: null,
+  },
+  {
+    id: "item-2",
+    name: "Bracelet",
+    img: bracelet,
+    type: 'bracelet',
+    price: 154000,
+    isStock: true,
+    hasoffer: false,
+    stockPrice: null,
+  },
+  {
+    id: "item-3",
+    name: "Chain",
+    img: chain,
+    type: 'chain',
+    price: 355000,
+    isStock: false,
+    hasoffer: false,
+    stockPrice: null,
+  },
+  {
+    id: "items-4",
+    name: "Ring",
+    img: ring,
+    type: 'ring',
+    price: 85000,
+    isStock: true,
+    hasoffer: true,
+    stockPrice: 75000,
+  },
+];

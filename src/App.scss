@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   font-family: "Times New Roman", sans-serif;
 }
@@ -126,6 +130,9 @@ body {
 
 // ./src/Pages/Home
 .home-container {
+  .home-container--hero {
+    height: 514px;
+  }
   // HomeAbout.jsx Component
   &--about {
     margin: 38px 10%;
@@ -166,13 +173,92 @@ body {
 
   // HomeJewelleries.jsx
   &--jewelleries {
+    margin: 38px 10%;
     &--header {
       h1 {
-        font-size: 32px;
-        font-weight: bold;
+        position: relative;
+        font-size: 2.2rem;
+        width: 100%;
+        padding: 0 0 15px 0;
+        margin: 0 0 35px 0;
+        text-transform: uppercase;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 160px;
+          height: 4px;
+          background-color: #df8931;
+        }
+      }
+
+      &--filter-bar {
         font-family: "poppins", sans-serif;
-        text-align: center;
-        padding: 50px 0;
+        display: flex;
+        gap: 32px;
+
+        button {
+          letter-spacing: 2px;
+          width: 150px;
+          background-color: #fbfbfb;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 5px;
+          padding: 2px 10px;
+
+          div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            width: 20px;
+          }
+        }
+      }
+    }
+
+    &--body {
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        margin: 24px 0;
+        padding: 10px;
+        width: 300px;
+        background-color: #f3f3f3;
+        border-radius: 16px;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 2px;
+
+        img {
+          border-radius: 16px 16px 0 0;
+        }
+
+        span {
+          margin: 20px 0;
+          display: flex;
+          justify-content: space-between;
+          font-family: "poppins", sans-serif;
+
+          .price {
+            color: #df8931;
+          }
+        }
+
+        .stock-status {
+          text-align: center;
+margin: 32px 0;
+        }
+
+        .in {
+          color: #162DFE;
+        }
+
+        .out {
+          color: #E93C3C;
+        }
       }
     }
   }
@@ -230,7 +316,7 @@ body {
       p {
         font-size: 22px;
         text-align: justify;
-        color: #3A3939;
+        color: #3a3939;
       }
     }
   }
@@ -322,7 +408,6 @@ body {
       img {
         width: 160px;
         margin: auto;
-
       }
 
       p {
@@ -356,38 +441,95 @@ body {
 
   &--body {
     display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
     width: 100%;
-    margin: 32px 10%;
+    margin: 32px 0;
 
     &--contact-details {
-      height: 300px;
       display: flex;
       justify-content: space-evenly;
       align-items: self-start;
       flex-direction: column;
 
       div {
-
         .type {
           font-weight: bold;
           font-size: 24px;
         }
 
         .detail {
-        font-size: 22px;
+          font-size: 22px;
         }
       }
     }
 
     form {
-      
-      div {
+      width: 40%;
+
+      .form-first-half {
         display: flex;
-        align-items: start;
 
         div {
           display: flex;
           flex-direction: column;
+          width: 50%;
+
+          label {
+            font-size: 20px;
+          }
+
+          input {
+            border: none;
+            border-bottom: solid 1px #000000;
+            width: 95%;
+          }
+
+          // Removed the increment and decrement buttons
+          input[type="number"]::-webkit-inner-spin-button,
+          input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+      }
+
+      .form-second-half {
+        margin: 16px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        div {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            font-size: 20px;
+          }
+
+          input {
+            border: none;
+            border-bottom: solid 1px #000000;
+          }
+          // Removed the increment and decrement buttons
+          input[type="number"]::-webkit-inner-spin-button,
+          input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+
+        &-send {
+          button {
+            border: none;
+            color: #000000;
+            background: #ffc26f;
+            border-radius: 6px;
+            padding: 5px 0;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+          }
         }
       }
     }

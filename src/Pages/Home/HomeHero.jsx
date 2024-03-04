@@ -5,10 +5,10 @@ import { heroSlide } from "../../Constant";
 
 function HomeHero() {
   return (
-    <div className="h-[514px]">
+    <div className="home-container--hero">
       <Carousel leftControl=" " rightControl=" ">
         {heroSlide.map ((slide) => (
-            <img src={slide.img} alt="" className="h-full" />
+            <img src={slide.img} alt="" className="h-full" key={slide.id}/>
         ))}
       </Carousel>
     </div>
