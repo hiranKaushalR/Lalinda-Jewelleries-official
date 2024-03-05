@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { items } from "../../Constant";
 import { check, blank } from "../../assets";
+import { Link } from "react-router-dom";
 
 function HomeJewelleries() {
   const [homeFilter, setHomeFilter] = useState("all");
@@ -62,16 +63,20 @@ function HomeJewelleries() {
                 // Render the item only if it does not have an offer
                 !item.hasoffer && (
                   <div key={item.id}>
-                    <img src={item.img} alt={item.name} />
-                    <span>
-                      <p className="name">{item.name}</p>
-                      <p className="price">LKR {item.price}</p>
-                    </span>
-                    <p
-                      className={`${item.isStock ? "in" : "out"} stock-status`}
-                    >
-                      {item.isStock ? "In-stock" : "Out of stock"}
-                    </p>
+                    <Link to={`${item.id}`}>
+                      <img src={item.img[0]} alt={item.name} />
+                      <span>
+                        <p className="name">{item.name}</p>
+                        <p className="price">LKR {item.price}</p>
+                      </span>
+                      <p
+                        className={`${
+                          item.isStock ? "in" : "out"
+                        } stock-status`}
+                      >
+                        {item.isStock ? "In-stock" : "Out of stock"}
+                      </p>
+                    </Link>
                   </div>
                 )
             )

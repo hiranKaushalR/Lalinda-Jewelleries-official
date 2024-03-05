@@ -39,5 +39,8 @@ import bracelet from "./bracelet.png";
 import chain from "./chain.png";
 import check from "./check.svg";
 import blank from "./blank.svg";
+import sample1 from "./sample1.png";
+import sample2 from "./sample2.png";
+import sample3 from "./sample3.png";
 
-export { ring, bracelet, chain, check, blank };
+export { ring, bracelet, chain, check, blank, sample1, sample2, sample3 };

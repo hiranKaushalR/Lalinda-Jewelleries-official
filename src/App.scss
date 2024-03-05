@@ -291,6 +291,39 @@ margin: 32px 0;
   }
 }
 
+.product-container {
+  margin: 24px 10%;
+
+  &--details {
+    
+      &--image-container {
+        display: flex;
+        align-items: stretch;
+        box-shadow: 10px 0 25px  1px;
+        width: 400px;
+
+        &--unselected-images {
+          height: 300px;
+          
+          img {
+            height: 100px;
+            width: 100px;
+            border: solid 1px #FFFFFF;
+          }
+        }
+
+        &--selected-images {
+          img {
+            height: 300px;
+          width: 300px;
+          background-position: center;
+          }
+        }
+      }
+    
+  }
+}
+
 // ./src/Pages/About
 // AboutCanvas.jsx
 .about-container {

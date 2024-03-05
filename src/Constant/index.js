@@ -2,6 +2,7 @@ import { heroSlider1, heroSlider2, heroSlider3 } from "../assets";
 import { facebook, instargram } from "../assets";
 import { service1, service2, service3, service4 } from "../assets";
 import { ring, bracelet, chain } from "../assets";
+import { sample1, sample2, sample3 } from "../assets";
 
 // Links and other informations
 const facebookLink = "https://www.facebook.com/";
@@ -88,8 +89,8 @@ export const items = [
   {
     id: "item-1",
     name: "Ring",
-    img: ring,
-    type: 'ring',
+    img: [ring, sample1, sample2, sample3],
+    type: "ring",
     price: 85000,
     isStock: true,
     hasoffer: false,
@@ -98,8 +99,8 @@ export const items = [
   {
     id: "item-2",
     name: "Bracelet",
-    img: bracelet,
-    type: 'bracelet',
+    img: [bracelet, sample1, sample2, sample3],
+    type: "bracelet",
     price: 154000,
     isStock: true,
     hasoffer: false,
@@ -108,18 +109,18 @@ export const items = [
   {
     id: "item-3",
     name: "Chain",
-    img: chain,
-    type: 'chain',
+    img: [chain, sample1, sample2, sample3],
+    type: "chain",
     price: 355000,
     isStock: false,
     hasoffer: false,
     stockPrice: null,
   },
   {
-    id: "items-4",
+    id: "item-4",
     name: "Ring",
-    img: ring,
-    type: 'ring',
+    img: [ring, sample1, sample2, sample3],
+    type: "ring",
     price: 85000,
     isStock: true,
     hasoffer: true,
