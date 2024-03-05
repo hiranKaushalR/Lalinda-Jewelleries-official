@@ -94,7 +94,9 @@ export const items = [
     price: 85000,
     isStock: true,
     hasoffer: false,
-    stockPrice: null,
+    offerPrice: null,
+    details:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
   },
   {
     id: "item-2",
@@ -104,17 +106,9 @@ export const items = [
     price: 154000,
     isStock: true,
     hasoffer: false,
-    stockPrice: null,
-  },
-  {
-    id: "item-3",
-    name: "Chain",
-    img: [chain, sample1, sample2, sample3],
-    type: "chain",
-    price: 355000,
-    isStock: false,
-    hasoffer: false,
-    stockPrice: null,
+    offerPrice: null,
+    details:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
   },
   {
     id: "item-4",
@@ -124,6 +118,20 @@ export const items = [
     price: 85000,
     isStock: true,
     hasoffer: true,
-    stockPrice: 75000,
+    offerPrice: 75000,
+    details:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
+  },
+  {
+    id: "item-3",
+    name: "Chain",
+    img: [chain, sample1, sample2, sample3],
+    type: "chain",
+    price: 355000,
+    isStock: false,
+    hasoffer: false,
+    offerPrice: null,
+    details:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
   },
 ];

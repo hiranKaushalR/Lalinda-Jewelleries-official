@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import ProductDetails from "./ProductDetails";
+import ProductSimilar from "./ProductSimilar";
 import { items } from "../../Constant";
 
 function ProductCanvas() {
@@ -12,16 +13,20 @@ function ProductCanvas() {
     const foundProduct = items.find((item) => item.id === id);
     setProduct(foundProduct);
   }, [id]);
-  console.log(product);
 
   return (
     <div className="product-container">
-      {product ? (
-        <ProductDetails product={product} />
-      ) : (
-        <p>Product not found</p>
-      )}
-      <Link to="/">Back to home</Link>
+      <Link to="..">Back to home</Link>
+      <div>
+        {product ? (
+          <ProductDetails product={product} />
+        ) : (
+          <p>Product not found</p>
+        )}
+      </div>
+      <div>
+<ProductSimilar />
+      </div>
     </div>
   );
 }

@@ -30,9 +30,26 @@ function ProductDetails(props) {
         </div>
       </div>
       <div className="product-container--details--info-container">
-        <h1>{product.name}</h1>
-        <div>
-              
+        <div className="product-container--details--info-container--topic">
+          <h1>{product.name}</h1>
+        </div>
+        <div className="product-container--details--info-container--category-and-availiability">
+          <p>
+            Category: <span>{product.type}</span>
+          </p>
+          <p>
+            Availiability:{" "}
+            <span className={product.isStock ? 'in-stock' : 'out-of-stock'}>{product.isStock ? "In-Stock" : "Out Of Stock"}</span>
+          </p>
+        </div>
+        <div className="product-container--details--info-container--price">
+          <p>
+            <span>Rs.</span> <span>{product.price}</span>
+            <span>.00</span>
+          </p>
+        </div>
+        <div className="product-container--details--info-container--details">
+          <p>{product.details}</p>
         </div>
       </div>
     </div>

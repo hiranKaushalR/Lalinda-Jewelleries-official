@@ -249,15 +249,15 @@ body {
 
         .stock-status {
           text-align: center;
-margin: 32px 0;
+          margin: 32px 0;
         }
 
         .in {
-          color: #162DFE;
+          color: #162dfe;
         }
 
         .out {
-          color: #E93C3C;
+          color: #e93c3c;
         }
       }
     }
@@ -293,34 +293,79 @@ margin: 32px 0;
 
 .product-container {
   margin: 24px 10%;
+  font-family: 'poppins', sans-serif;
 
   &--details {
-    
-      &--image-container {
-        display: flex;
-        align-items: stretch;
-        box-shadow: 10px 0 25px  1px;
-        width: 400px;
+    margin: 64px 0;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: stretch;
+    &--image-container {
+      display: flex;
+      align-items: stretch;
+      box-shadow: 1px 1px 7px 1px;
+      width: 400px;
 
-        &--unselected-images {
-          height: 300px;
-          
-          img {
-            height: 100px;
-            width: 100px;
-            border: solid 1px #FFFFFF;
-          }
+      &--unselected-images {
+        height: 300px;
+
+        img {
+          height: 100px;
+          width: 100px;
+          border: solid 1px #ffffff;
+          cursor: pointer;
         }
+      }
 
-        &--selected-images {
-          img {
-            height: 300px;
+      &--selected-images {
+        img {
+          height: 300px;
           width: 300px;
           background-position: center;
+        }
+      }
+    }
+
+    &--info-container {
+      max-width: 600px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      &--topic {
+        h1 {
+          font-size: 40px;
+        }
+      }
+
+      &--category-and-availiability {
+        display: flex;
+        text-transform: capitalize;
+        justify-content: space-between;
+        font-size: 20px;
+
+        p {
+
+          .in-stock {
+            color: #37AD23;
+          }
+          .out-of-stock {
+            color: #e93c3c;
           }
         }
       }
-    
+
+      &--price {
+        font-size: 30px;
+        font-weight: 600;
+        border-top: solid 2px #000000;
+        border-bottom: solid 2px #000000;
+      }
+
+      &--details {
+        font-size: 20px;
+      }
+    }
   }
 }
 
