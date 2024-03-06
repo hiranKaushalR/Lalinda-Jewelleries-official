@@ -93,7 +93,7 @@ export const items = [
     type: "ring",
     price: 85000,
     isStock: true,
-    hasoffer: false,
+    hasOffer: false,
     offerPrice: null,
     details:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
@@ -105,19 +105,19 @@ export const items = [
     type: "bracelet",
     price: 154000,
     isStock: true,
-    hasoffer: false,
+    hasOffer: false,
     offerPrice: null,
     details:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
   },
   {
     id: "item-4",
-    name: "Ring",
-    img: [ring, sample1, sample2, sample3],
+    name: "Golden Ring",
+    img: [sample2, ring, sample1, sample3],
     type: "ring",
     price: 85000,
     isStock: true,
-    hasoffer: true,
+    hasOffer: true,
     offerPrice: 75000,
     details:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
@@ -129,9 +129,109 @@ export const items = [
     type: "chain",
     price: 355000,
     isStock: false,
-    hasoffer: false,
+    hasOffer: false,
     offerPrice: null,
     details:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
   },
+
+  {
+    id: "item-5",
+    name: "Diamond Ring",
+    img: [ring, sample1, sample2, sample3],
+    type: "ring",
+    price: 85000,
+    isStock: true,
+    hasOffer: false,
+    offerPrice: null,
+    details:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
+  },
+  {
+    id: "item-6",
+    name: "Golden Bracelet",
+    img: [bracelet, sample1, sample2, sample3],
+    type: "bracelet",
+    price: 154000,
+    isStock: true,
+    hasOffer: true,
+    offerPrice: 85000,
+    details:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
+  },
+  {
+    id: "item-7",
+    name: "Silver Ring",
+    img: [sample1,ring,  sample2, sample3],
+    type: "ring",
+    price: 85000,
+    isStock: true,
+    hasOffer: true,
+    offerPrice: 75000,
+    details:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
+  },
+  {
+    id: "item-8",
+    name: "Gold Chain",
+    img: [sample1, chain, sample2, sample3],
+    type: "chain",
+    price: 355000,
+    isStock: false,
+    hasOffer: false,
+    offerPrice: null,
+    details:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
+  },
+
+  [
+    {
+      id: "item-9",
+      name: "Sapphire Chain",
+      img: [chain, sample3, sample1, sample2],
+      type: "chain",
+      price: 125000,
+      isStock: true,
+      hasOffer: true,
+      offerPrice: 105000,
+      details:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
+    },
+    {
+      id: "item-10",
+      name: "Emerald Ring",
+      img: [sample3,ring, sample2,  sample1],
+      type: "ring",
+      price: 95000,
+      isStock: true,
+      hasOffer: false,
+      offerPrice: null,
+      details:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
+    },
+    {
+      id: "item-11",
+      name: "Pearl Bracelet",
+      img: [sample3,bracelet, sample1, sample2],
+      type: "bracelet",
+      price: 88000,
+      isStock: false,
+      hasOffer: false,
+      offerPrice: null,
+      details:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
+    },
+    {
+      id: "item-12",
+      name: "Ruby Ring",
+      img: [sample3,ring,  sample2, sample1],
+      type: "ring",
+      price: 120000,
+      isStock: true,
+      hasOffer: true,
+      offerPrice: 105000,
+      details:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
+    },
+  ],
 ];

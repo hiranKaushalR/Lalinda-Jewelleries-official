@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function ProductDetails(props) {
   const [selectedImage, setSelectedImage] = useState(0); // Initialize selectedImage state to 0
-  const product = props.product;
+  const { product } = props;
 
   // Function to handle image selection
   const handleImageSelect = (index) => {
@@ -39,14 +39,31 @@ function ProductDetails(props) {
           </p>
           <p>
             Availiability:{" "}
-            <span className={product.isStock ? 'in-stock' : 'out-of-stock'}>{product.isStock ? "In-Stock" : "Out Of Stock"}</span>
+            <span className={product.isStock ? "in-stock" : "out-of-stock"}>
+              {product.isStock ? "In-Stock" : "Out Of Stock"}
+            </span>
           </p>
         </div>
         <div className="product-container--details--info-container--price">
-          <p>
-            <span>Rs.</span> <span>{product.price}</span>
-            <span>.00</span>
-          </p>
+          {product.hasOffer ? (
+            <div className="product-container--details--info-container--price--has-offer-price">
+              <p className="product-container--details--info-container--price--has-offer-price--old">
+                <span>Rs.</span> <span>{product.price}</span>
+                <span>.00</span>
+              </p>
+              <p className="product-container--details--info-container--price--has-offer-price--new">
+                <span>Rs.</span> <span>{product.offerPrice}</span>
+                <span>.00</span>
+              </p>
+            </div>
+          ) : (
+            <div className="product-container--details--info-container--price--has-no-offer-price">
+              <p>
+                <span>Rs.</span> <span>{product.price}</span>
+                <span>.00</span>
+              </p>
+            </div>
+          )}
         </div>
         <div className="product-container--details--info-container--details">
           <p>{product.details}</p>

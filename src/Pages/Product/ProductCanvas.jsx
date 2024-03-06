@@ -25,7 +25,12 @@ function ProductCanvas() {
         )}
       </div>
       <div>
-<ProductSimilar />
+        {" "}
+        {product ? (
+          <ProductSimilar product={product} />
+        ) : (
+          <p>Product not found</p>
+        )}
       </div>
     </div>
   );
