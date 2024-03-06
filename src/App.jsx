@@ -23,6 +23,7 @@ function App() {
         <Route path='about' element={<AboutCanvas />} />
         <Route path='jewellery' element={<JewelleryCanvas />} />
         <Route path='offers' element={<OfferCanvas />} />
+        <Route path='offers/:id' element={<ProductCanvas/>} />
         <Route path='new' element={<NewCanvas />} />
         <Route path='services' element={<ServiceCanvas />} />
         <Route path='contact' element={<ContactCanvas />} />

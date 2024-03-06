@@ -58,7 +58,7 @@ function HomeJewelleries() {
               return item.type === homeFilter;
             })
             // Map over the filtered items to render each item
-            .slice (0, 3).map(
+            .slice (0, 4).map(
               (item) =>
                 // Render the item only if it does not have an offer
                 !item.hasoffer && (

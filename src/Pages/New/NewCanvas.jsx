@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import NewHead from "./NewHead";
+import NewBody from "./NewBody";
 
 function NewCanvas() {
   return (
-    <div>NewCanvas</div>
-  )
+    <div className="new-container">
+      <NewHead />
+      <NewBody />
+    </div>
+  );
 }
 
-export default NewCanvas
+export default NewCanvas;

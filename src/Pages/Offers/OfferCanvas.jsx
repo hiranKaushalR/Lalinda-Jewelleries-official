@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import OfferHead from "./OfferHead";
+import OfferBody from "./OfferBody";
 
 function OfferCanvas() {
   return (
-    <div>OfferCanvas</div>
-  )
+    <div className="offers-container">
+      <OfferHead />
+      <OfferBody />
+    </div>
+  );
 }
 
-export default OfferCanvas
+export default OfferCanvas;
