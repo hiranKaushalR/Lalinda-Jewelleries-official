@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import JewelleryHead from "./JewelleryHead";
+import JewelleryFilter from "./JewelleryFilter";
 
-function JewelleryCanvas() {
+function JewelleryCanvas(props) {
+  const { setSelectedCategoryInJwellery, selectedCategoryInJwellery } = props;
+
   return (
-    <div>JewelleryCanvas</div>
-  )
+    <div className="jewellery-container">
+      <JewelleryHead />
+      <JewelleryFilter />
+    </div>
+  );
 }
 
-export default JewelleryCanvas
+export default JewelleryCanvas;

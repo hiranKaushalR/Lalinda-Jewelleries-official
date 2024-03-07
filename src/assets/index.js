@@ -44,3 +44,11 @@ import sample2 from "./sample2.png";
 import sample3 from "./sample3.png";
 
 export { ring, bracelet, chain, check, blank, sample1, sample2, sample3 };
+
+// Whats's New page 
+import newImage1 from './new-img-1.png'
+import newImage2 from './new-img-2.png'
+import newImage3 from './new-img-3.png'
+import newImage4 from './new-img-4.png'
+
+export {newImage1, newImage2, newImage3, newImage4}

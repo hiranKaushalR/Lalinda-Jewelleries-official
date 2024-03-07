@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 function ProductSimilar(props) {
   const { product } = props;
+  const { setSelectedCategoryInJwellery } = props;
 
   // Filter items with matching type and exclude the current product
   const similarItems = items.filter(
@@ -66,7 +67,34 @@ function ProductSimilar(props) {
             </div>
           ))}
         </div>
-        <div className="product-container--similar--body-category"></div>
+        <div className="product-container--similar--body-category">
+          <div className="product-container--similar--body-category--head">
+            <h1>Categories</h1>
+          </div>
+          <div className="product-container--similar--body-category--body">
+            {/* <Link to="/jewellery">
+              <p onClick={() => setSelectedCategoryInJwellery("rings")}>
+                Rings
+              </p>
+            </Link>
+            <Link to="/jewellery">
+              {" "}
+              <p onClick={() => setSelectedCategoryInJwellery("earrings")}>
+                Earrings
+              </p>
+            </Link>{" "}
+            <Link to="/jewellery">
+              <p onClick={() => setSelectedCategoryInJwellery("bracelets")}>
+                Bracelets
+              </p>
+            </Link>
+            <Link to="/jewellery">
+              <p onClick={() => setSelectedCategoryInJwellery("chains")}>
+                Chains
+              </p>
+            </Link> */}
+          </div>
+        </div>
       </div>
     </div>
   );

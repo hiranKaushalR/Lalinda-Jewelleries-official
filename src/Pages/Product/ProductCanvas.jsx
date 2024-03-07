@@ -5,7 +5,7 @@ import ProductDetails from "./ProductDetails";
 import ProductSimilar from "./ProductSimilar";
 import { items } from "../../Constant";
 
-function ProductCanvas() {
+function ProductCanvas(props) {
   const [product, setProduct] = useState(null);
   const { id } = useParams();
 
@@ -16,7 +16,9 @@ function ProductCanvas() {
 
   return (
     <div className="product-container">
-      <Link to="..">Back to home</Link>
+      <Link to=".." relative="path">
+        Back to home
+      </Link>
       <div>
         {product ? (
           <ProductDetails product={product} />
