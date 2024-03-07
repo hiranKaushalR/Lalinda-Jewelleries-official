@@ -18,6 +18,13 @@ import offers from "./offers.png";
 
 export { homeAbout, JewelleryCollection, offers };
 
+// New collection in home
+import homeCollection1 from "./home-collection-1.png";
+import homeCollection2 from "./home-collection-2.png";
+import homeCollection3 from "./home-collection-3.png";
+
+export { homeCollection1, homeCollection2, homeCollection3 };
+
 // BG and Chairman in about page
 import aboutBackground from "./about-background.png";
 import aboutChairman from "./about-chairman.png";
@@ -45,10 +52,47 @@ import sample3 from "./sample3.png";
 
 export { ring, bracelet, chain, check, blank, sample1, sample2, sample3 };
 
-// Whats's New page 
-import newImage1 from './new-img-1.png'
-import newImage2 from './new-img-2.png'
-import newImage3 from './new-img-3.png'
-import newImage4 from './new-img-4.png'
+// Whats's New page
+import newImage1 from "./new-img-1.png";
+import newImage2 from "./new-img-2.png";
+import newImage3 from "./new-img-3.png";
+import newImage4 from "./new-img-4.png";
 
-export {newImage1, newImage2, newImage3, newImage4}
+export { newImage1, newImage2, newImage3, newImage4 };
+
+// Jewellery Page
+import jewellerySliderImage from "./jewellery-slider.png";
+
+import jewelleryRing1 from "./jewellery-ring-1.png";
+import jewelleryRing2 from "./jewellery-ring-2.png";
+import jewelleryRing3 from "./jewellery-ring-3.png";
+import jewelleryRing4 from "./jewellery-ring-4.png";
+
+import jewelleryBracelet1 from "./jewellery-bracelet-1.png";
+import jewelleryBracelet2 from "./jewellery-bracelet-2.png";
+
+import jewelleryChain1 from "./jewellery-chain-1.png";
+import jewelleryChain2 from "./jewellery-chain-2.png";
+import jewelleryChain3 from "./jewellery-chain-3.png";
+
+import jewelleryEarrings1 from "./jewellery-earrings-1.png";
+import jewelleryEarrings2 from "./jewellery-earrings-2.png";
+import jewelleryEarrings3 from "./jewellery-earrings-3.png";
+import jewelleryEarrings4 from "./jewellery-earrings-4.png";
+
+export {
+  jewellerySliderImage,
+  jewelleryRing1,
+  jewelleryRing2,
+  jewelleryRing3,
+  jewelleryRing4,
+  jewelleryBracelet1,
+  jewelleryBracelet2,
+  jewelleryChain1,
+  jewelleryChain2,
+  jewelleryChain3,
+  jewelleryEarrings1,
+  jewelleryEarrings2,
+  jewelleryEarrings3,
+  jewelleryEarrings4,
+};

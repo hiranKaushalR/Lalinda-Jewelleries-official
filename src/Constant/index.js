@@ -3,6 +3,7 @@ import { facebook, instargram } from "../assets";
 import { service1, service2, service3, service4 } from "../assets";
 import { ring, bracelet, chain } from "../assets";
 import { sample1, sample2, sample3 } from "../assets";
+import { jewellerySliderImage } from "../assets";
 
 // Links and other informations
 const facebookLink = "https://www.facebook.com/";
@@ -162,7 +163,7 @@ export const items = [
   {
     id: "item-7",
     name: "Silver Ring",
-    img: [sample1,ring,  sample2, sample3],
+    img: [sample1, ring, sample2, sample3],
     type: "ring",
     price: 85000,
     isStock: true,
@@ -200,7 +201,7 @@ export const items = [
     {
       id: "item-10",
       name: "Emerald Ring",
-      img: [sample3,ring, sample2,  sample1],
+      img: [sample3, ring, sample2, sample1],
       type: "ring",
       price: 95000,
       isStock: true,
@@ -212,7 +213,7 @@ export const items = [
     {
       id: "item-11",
       name: "Pearl Bracelet",
-      img: [sample3,bracelet, sample1, sample2],
+      img: [sample3, bracelet, sample1, sample2],
       type: "bracelet",
       price: 88000,
       isStock: false,
@@ -224,7 +225,7 @@ export const items = [
     {
       id: "item-12",
       name: "Ruby Ring",
-      img: [sample3,ring,  sample2, sample1],
+      img: [sample3, ring, sample2, sample1],
       type: "ring",
       price: 120000,
       isStock: true,
@@ -234,4 +235,19 @@ export const items = [
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
     },
   ],
+];
+
+export const jewelerySliderAssets = [
+  {
+    id: "1",
+    img: jewellerySliderImage,
+  },
+  {
+    id: "2",
+    img: jewellerySliderImage,
+  },
+  {
+    id: "3",
+    img: jewellerySliderImage,
+  },
 ];

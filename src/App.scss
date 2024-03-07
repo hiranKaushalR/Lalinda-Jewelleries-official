@@ -130,7 +130,7 @@ body {
 
 // ./src/Pages/Home
 .home-container {
-  .home-container--hero {
+  &--hero {
     height: 514px;
   }
   // HomeAbout.jsx Component
@@ -277,13 +277,54 @@ body {
 
   // HomeNewCollection.jsx
   &--new-collection {
+    margin: 24px 10%;
+
     &--header {
       h1 {
-        font-size: 32px;
-        font-family: "poppins", sans-serif;
-        padding: 2rem 0;
+        position: relative;
+        font-size: 2.2rem;
+        width: 100%;
+        padding: 0 0 15px 0;
+        margin: 0 0 35px 0;
+        text-transform: uppercase;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 160px;
+          height: 4px;
+          background-color: #df8931;
+        }
+      }
+    }
+
+    &--body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &--image-collection {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+
+        .image-selection-section-2 {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
+      }
+
+      button {
+        background-color: #F5C16C;
+        margin: 32px 0;
+        padding: 8px 120px;
+        font-size: 30px;
         font-weight: bold;
-        text-align: center;
+        border-radius: 5px;
       }
     }
   }
@@ -571,6 +612,151 @@ body {
       }
     }
   }
+
+  &--slider {
+    margin: 32px 0;
+    height: 400px;
+  }
+
+  &--rings {
+    &-header {
+      margin: 16px 10%;
+
+      h1 {
+        position: relative;
+        font-size: 36px;
+        font-weight: bold;
+        width: 100%;
+        margin: 0 0 35px 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 50px;
+          height: 4px;
+          background-color: #df8931;
+        }
+      }
+    }
+
+    &-products {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 24px;
+
+      .product-section-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &--bracelets {
+    &--header {
+      margin: 16px 10%;
+
+      h1 {
+        position: relative;
+        font-size: 36px;
+        font-weight: bold;
+        width: 100%;
+        margin: 0 0 35px 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 50px;
+          height: 4px;
+          background-color: #df8931;
+        }
+      }
+    }
+
+    &-products {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 48%;
+      }
+    }
+  }
+
+  &--chains {
+    &--header {
+      margin: 16px 10%;
+
+      h1 {
+        position: relative;
+        font-size: 36px;
+        font-weight: bold;
+        width: 100%;
+        margin: 0 0 35px 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 50px;
+          height: 4px;
+          background-color: #df8931;
+        }
+      }
+    }
+
+    &-products {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 30%;
+      }
+    }
+  }
+
+  &--earrings {
+    &-header {
+      margin: 16px 10%;
+
+      h1 {
+        position: relative;
+        font-size: 36px;
+        font-weight: bold;
+        width: 100%;
+        margin: 0 0 35px 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 50px;
+          height: 4px;
+          background-color: #df8931;
+        }
+      }
+    }
+
+    &-products {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 24px;
+
+      .product-section-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
 }
 
 .offers-container {
@@ -662,9 +848,7 @@ body {
   }
 }
 
-
 .new-container {
-
   &--head {
     background-image: url(./assets/new-background.png);
     display: flex;
@@ -679,7 +863,7 @@ body {
       text-align: center;
       font-weight: 600;
       text-transform: uppercase;
-      font-family: 'poppins', sans-serif;
+      font-family: "poppins", sans-serif;
     }
   }
 
@@ -690,31 +874,31 @@ body {
       font-size: 20px;
       text-align: justify;
     }
-  &--more {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-
-    div {
-      width: 50%;
+    &--more {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
 
-     img {
-      width: 100%;
-     }
+      div {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-     button {
-      font-size: 24px;
-      background-color: #FFC26F;
-      border-radius: 6px;
-      padding: 8px 32px;
-      font-weight: 600;
-     }
+        img {
+          width: 100%;
+        }
+
+        button {
+          font-size: 24px;
+          background-color: #ffc26f;
+          border-radius: 6px;
+          padding: 8px 32px;
+          font-weight: 600;
+        }
+      }
     }
-  }
   }
 
   &--gallery {
@@ -737,7 +921,6 @@ body {
       }
     }
   }
-
 }
 
 // ./src/Service/ServiceCanvas

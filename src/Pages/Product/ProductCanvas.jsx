@@ -1,11 +1,14 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import ProductDetails from "./ProductDetails";
 import ProductSimilar from "./ProductSimilar";
 import { items } from "../../Constant";
+import { CategoryContext } from "../../CategoryProvider";
 
 function ProductCanvas(props) {
+  const { selectedCategoryInJewellery, setSelectedCategoryInJewellery } =
+    useContext(CategoryContext);
   const [product, setProduct] = useState(null);
   const { id } = useParams();
 
@@ -29,7 +32,10 @@ function ProductCanvas(props) {
       <div>
         {" "}
         {product ? (
-          <ProductSimilar product={product} />
+          <ProductSimilar
+            product={product}
+            setSelectedCategoryInJewellery={setSelectedCategoryInJewellery}
+          />
         ) : (
           <p>Product not found</p>
         )}

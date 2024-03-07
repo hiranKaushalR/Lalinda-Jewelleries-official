@@ -1,6 +1,5 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
-import { heroSlider1, heroSlider2, heroSlider3 } from "../../assets";
 import { heroSlide } from "../../Constant";
 
 function HomeHero() {

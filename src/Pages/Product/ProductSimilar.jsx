@@ -3,8 +3,7 @@ import { items } from "../../Constant";
 import { Link } from "react-router-dom";
 
 function ProductSimilar(props) {
-  const { product } = props;
-  const { setSelectedCategoryInJwellery } = props;
+  const { product, setSelectedCategoryInJewellery } = props;
 
   // Filter items with matching type and exclude the current product
   const similarItems = items.filter(
@@ -27,7 +26,7 @@ function ProductSimilar(props) {
               <Link to={`/${item.id}`}>
                 <img src={item.img[0]} alt={item.name} />
                 {item.hasOffer ? (
-                  // If there is a offer this part is rendering
+                  // If there is an offer, this part is rendered
                   <span>
                     <span>
                       <p className="has-offer-name">{item.name}</p>{" "}
@@ -47,7 +46,7 @@ function ProductSimilar(props) {
                     </span>
                   </span>
                 ) : (
-                  // If there isn't a offer this part is rendering
+                  // If there isn't an offer, this part is rendered
 
                   <span>
                     <span>
@@ -72,27 +71,27 @@ function ProductSimilar(props) {
             <h1>Categories</h1>
           </div>
           <div className="product-container--similar--body-category--body">
-            {/* <Link to="/jewellery">
-              <p onClick={() => setSelectedCategoryInJwellery("rings")}>
+            <Link to="/jewellery">
+              <p onClick={() => setSelectedCategoryInJewellery("rings")}>
                 Rings
               </p>
             </Link>
             <Link to="/jewellery">
               {" "}
-              <p onClick={() => setSelectedCategoryInJwellery("earrings")}>
+              <p onClick={() => setSelectedCategoryInJewellery("earrings")}>
                 Earrings
               </p>
             </Link>{" "}
             <Link to="/jewellery">
-              <p onClick={() => setSelectedCategoryInJwellery("bracelets")}>
+              <p onClick={() => setSelectedCategoryInJewellery("bracelets")}>
                 Bracelets
               </p>
             </Link>
             <Link to="/jewellery">
-              <p onClick={() => setSelectedCategoryInJwellery("chains")}>
+              <p onClick={() => setSelectedCategoryInJewellery("chains")}>
                 Chains
               </p>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>
