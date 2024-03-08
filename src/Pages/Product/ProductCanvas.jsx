@@ -5,6 +5,7 @@ import ProductDetails from "./ProductDetails";
 import ProductSimilar from "./ProductSimilar";
 import { items } from "../../Constant";
 import { CategoryContext } from "../../CategoryProvider";
+import { back } from "../../assets";
 
 function ProductCanvas(props) {
   const { selectedCategoryInJewellery, setSelectedCategoryInJewellery } =
@@ -20,7 +21,10 @@ function ProductCanvas(props) {
   return (
     <div className="product-container">
       <Link to=".." relative="path">
-        Back to home
+        <div className="product-container--go-back">
+          <img src={back} alt="" />
+          <p>Go Back</p>
+        </div>
       </Link>
       <div>
         {product ? (

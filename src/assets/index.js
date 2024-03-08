@@ -15,8 +15,9 @@ export { heroSlider1, heroSlider2, heroSlider3 };
 import homeAbout from "./home-about.png";
 import JewelleryCollection from "./Jewellery-collection.png";
 import offers from "./offers.png";
+import back from "./back.svg";
 
-export { homeAbout, JewelleryCollection, offers };
+export { homeAbout, JewelleryCollection, offers, back };
 
 // New collection in home
 import homeCollection1 from "./home-collection-1.png";

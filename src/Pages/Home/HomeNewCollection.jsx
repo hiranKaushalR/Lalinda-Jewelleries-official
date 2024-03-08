@@ -4,6 +4,7 @@ import {
   homeCollection2,
   homeCollection3,
 } from "../../assets";
+import { Link } from "react-router-dom";
 
 function HomeNewCollection() {
   return (
@@ -21,7 +22,7 @@ function HomeNewCollection() {
             <img src={homeCollection3} alt="" />
           </div>
         </div>
-        <button>More</button>
+        <Link to='new'><button>More</button></Link>
       </div>
     </section>
   );

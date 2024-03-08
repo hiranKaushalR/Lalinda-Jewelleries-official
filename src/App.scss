@@ -319,7 +319,7 @@ body {
       }
 
       button {
-        background-color: #F5C16C;
+        background-color: #f5c16c;
         margin: 32px 0;
         padding: 8px 120px;
         font-size: 30px;
@@ -340,6 +340,12 @@ body {
 .product-container {
   margin: 24px 10%;
   font-family: "poppins", sans-serif;
+
+  &--go-back {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
 
   &--details {
     margin: 64px 0;
@@ -428,6 +434,9 @@ body {
     }
 
     &--body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       &-products {
         display: flex;
         gap: 24px;
@@ -486,6 +495,30 @@ body {
           .out {
             color: #e93c3c;
           }
+        }
+      }
+
+      &-category {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #df8931;
+        background-color: #ece9e9;
+        padding: 24px;
+        border-radius: 16px;
+
+        &--head {
+          font-size: 48px;
+          border-bottom: solid 4px #df8931;
+        }
+
+        &--body {
+          height: 300px;
+          font-size: 24px;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
         }
       }
     }
@@ -619,6 +652,8 @@ body {
   }
 
   &--rings {
+    margin-block: 24px;
+
     &-header {
       margin: 16px 10%;
 
@@ -656,6 +691,7 @@ body {
   }
 
   &--bracelets {
+    margin-block: 24px;
     &--header {
       margin: 16px 10%;
 
@@ -689,6 +725,8 @@ body {
   }
 
   &--chains {
+    margin-block: 24px;
+
     &--header {
       margin: 16px 10%;
 
@@ -722,6 +760,8 @@ body {
   }
 
   &--earrings {
+    margin-block: 24px;
+
     &-header {
       margin: 16px 10%;
 

@@ -1,5 +1,6 @@
 import React from "react";
-import { ring, bracelet } from "../../assets";
+import { Link } from "react-router-dom";
+import { items } from "../../Constant";
 
 function NewBody() {
   return (
@@ -15,14 +16,16 @@ function NewBody() {
         </p>
       </div>
       <div className="new-container--body--more">
-        <div className="new-container--body--more--item-1">
-            <img src={ring} alt="ring" />
-            <button>More</button>
-        </div>
-        <div className="new-container--body--more--item-2">
-            <img src={bracelet} alt="bracelet" />
-            <button>More</button>
-        </div>
+      {
+  items.slice(0, 2).map((item) => (
+    <div key={item.id}>
+      {item.img && item.img[0] && (
+        <img src={item.img[0]} alt={item.name} />
+      )}
+      <Link to={`${item.id}`}><button>More</button></Link>
+    </div>
+  ))
+}
       </div>
     </div>
   );
