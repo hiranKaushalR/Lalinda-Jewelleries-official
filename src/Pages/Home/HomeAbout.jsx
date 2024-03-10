@@ -8,7 +8,9 @@ function HomeAbout() {
         <h1>STORY OF LALINDA JEWELLERIES</h1>
       </div>
       <div className="home-container--about--body">
-        <img src={homeAbout} alt="" />
+        <div className="ab-img">
+          <img src={homeAbout} alt="" />
+        </div>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
