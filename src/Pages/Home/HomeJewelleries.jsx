@@ -37,6 +37,14 @@ function HomeJewelleries() {
             </div>
           </button>
         </div>
+        <div className="home-container--jewelleries--header--filter-bar-mobile flex justify-end">
+          <select name="" id="" onChange={(event) => setHomeFilter (event.target.value)}>
+            <option value="all">All</option>
+            <option value="ring">Rings</option>
+            <option value="bracelet">Bracelets</option>
+            <option value="chain">Chains</option>
+          </select> 
+        </div>
       </div>
       <div className="home-container--jewelleries--body">
         {items.filter((item) => {

@@ -36,6 +36,13 @@ function JewelleryFilter(props) {
           Earrings
         </li>
       </ul>
+      <select name="" id="" onChange={(event) => setSelectedCategoryInJewellery (event.target.value)}>
+        <option value="all">All</option>
+        <option value="rings">Rings</option>
+        <option value="bracelets">Bracelets</option>
+        <option value="chains">Chains</option>
+        <option value="earrings">Earrings</option>
+      </select>
     </div>
   );
 }
