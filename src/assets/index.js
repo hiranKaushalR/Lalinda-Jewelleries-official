@@ -1,8 +1,9 @@
-// Social Media Icons
+// Social Media Icons and other icons
 import facebook from "./facebook.png";
 import instargram from "./instargram.png";
-
-export { facebook, instargram };
+import menu from "./menu.svg";
+import close from "./close.svg";
+export { facebook, instargram, close, menu };
 
 // Slider in Home
 import heroSlider1 from "./hero-slider-1.png";
