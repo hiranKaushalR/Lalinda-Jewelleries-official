@@ -13,9 +13,16 @@ body {
 
 // ./src/Components
 // Header.jsx
+.position-fixed {
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+}
+
 .header-container {
-  // display: none;
+  z-index: 99;
   padding: 30px 5%;
+
   &--child {
     display: flex;
     justify-content: space-between;
@@ -133,6 +140,7 @@ body {
   &--hero {
     height: 514px;
   }
+
   // HomeAbout.jsx Component
   &--about {
     margin: 38px 10%;
@@ -156,12 +164,15 @@ body {
         }
       }
     }
+
     &--body {
       display: flex;
       gap: 32px;
+
       img {
         max-width: 592px;
       }
+
       p {
         line-height: 40px;
         font-size: 20px;
@@ -174,6 +185,7 @@ body {
   // HomeJewelleries.jsx
   &--jewelleries {
     margin: 38px 10%;
+
     &--header {
       h1 {
         position: relative;
@@ -194,6 +206,7 @@ body {
         }
       }
 
+      ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       &--filter-bar {
         font-family: "poppins", sans-serif;
         display: flex;
@@ -219,6 +232,9 @@ body {
       }
 
       &--filter-bar-mobile {
+        float: left;
+        display: none;
+
         select {
           font-family: "poppins", sans-serif;
           font-size: 18px;
@@ -231,10 +247,11 @@ body {
     }
 
     &--body {
+      margin-top: 90px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 64px;
+      justify-content: center;
+      gap: 24px;
 
       div {
         margin: 24px 0;
@@ -248,13 +265,15 @@ body {
 
         img {
           width: 100%;
+          height: 300px;
+          object-fit: cover;
           border-radius: 16px 16px 0 0;
         }
 
         span {
           margin: 20px 0;
           display: flex;
-          flex-wrap: wrap;
+          flex-direction: column;
           column-gap: 30px;
           row-gap: 10px;
           justify-content: center;
@@ -368,6 +387,7 @@ body {
     justify-content: center;
     gap: 60px;
     align-items: stretch;
+
     &--image-container {
       display: flex;
       align-items: stretch;
@@ -398,6 +418,7 @@ body {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+
       &--topic {
         h1 {
           font-size: 40px;
@@ -414,6 +435,7 @@ body {
           .in-stock {
             color: #37ad23;
           }
+
           .out-of-stock {
             color: #e93c3c;
           }
@@ -430,6 +452,7 @@ body {
           display: flex;
           gap: 20px;
           flex-wrap: wrap;
+
           &--old {
             text-decoration: line-through;
           }
@@ -450,8 +473,10 @@ body {
 
     &--body {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+
       &-products {
         display: flex;
         gap: 24px;
@@ -515,7 +540,9 @@ body {
 
       &-category {
         height: 400px;
+        width: 80%;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: flex-start;
         color: #df8931;
@@ -524,11 +551,15 @@ body {
         border-radius: 16px;
 
         &--head {
+          width: 100%;
+          text-align: center;
           font-size: 48px;
           border-bottom: solid 4px #df8931;
         }
 
         &--body {
+          width: 100%;
+          text-align: center;
           height: 300px;
           font-size: 24px;
           display: flex;
@@ -607,6 +638,7 @@ body {
           width: 100%;
           border-radius: 999px;
         }
+
         .chairman-name {
           width: 100%;
           font-size: 20px;
@@ -652,6 +684,7 @@ body {
 
   &--filter {
     margin: 24px 10%;
+
     ul {
       display: flex;
       justify-content: space-around;
@@ -666,7 +699,9 @@ body {
       }
     }
 
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
     select {
+      display: none;
       width: 150px;
       font-family: "poppins", sans-serif;
       font-weight: 500;
@@ -679,7 +714,8 @@ body {
 
   &--slider {
     margin: 32px 0;
-    height: 400px;
+    height: 300px;
+    object-fit: cover;
   }
 
   &--rings {
@@ -723,6 +759,7 @@ body {
 
   &--bracelets {
     margin-block: 24px;
+
     &--header {
       margin: 16px 10%;
 
@@ -951,6 +988,7 @@ body {
       font-size: 20px;
       text-align: justify;
     }
+
     &--more {
       display: flex;
       align-items: flex-end;
@@ -1128,6 +1166,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 16px;
+
         div {
           display: flex;
           flex-direction: column;
@@ -1140,6 +1179,7 @@ body {
             border: none;
             border-bottom: solid 1px #000000;
           }
+
           // Removed the increment and decrement buttons
           input[type="number"]::-webkit-inner-spin-button,
           input[type="number"]::-webkit-outer-spin-button {
@@ -1172,6 +1212,7 @@ body {
 // Desktop Fix
 @media screen and (max-width: 1301px) and (min-width: 1100px) {
   .home-container {
+
     // HomeAbout.jsx Component
     &--about {
       margin: 38px 10%;
@@ -1181,6 +1222,7 @@ body {
           font-size: 2.2rem;
         }
       }
+
       &--body {
         width: 100%;
         display: flex;
@@ -1207,11 +1249,13 @@ body {
 
 // Tablet
 @media screen and (max-width: 1100px) {
+
   // Index
   .home-container {
     &--hero {
       height: 314px;
     }
+
     &--about {
       margin: 38px 10%;
 
@@ -1220,6 +1264,7 @@ body {
           font-size: 01.5rem;
         }
       }
+
       &--body {
         width: 100%;
         display: block;
@@ -1229,6 +1274,7 @@ body {
           font-size: 1rem;
           line-height: 30px;
         }
+
         .ab-img {
           margin-bottom: 30px;
           background-image: url(./assets/home-about.png);
@@ -1247,11 +1293,13 @@ body {
         }
       }
     }
+
     &--offers {
       img {
         height: 317px;
       }
     }
+
     &--jewelleries {
       &--body {
         display: flex;
@@ -1261,6 +1309,7 @@ body {
       }
     }
   }
+
   // About
   .about-container {
     &--body {
@@ -1306,6 +1355,7 @@ body {
             width: 100%;
             border-radius: 999px;
           }
+
           .chairman-name {
             width: 100%;
             font-size: 20px;
@@ -1320,44 +1370,182 @@ body {
       }
     }
   }
+
   //Jewellery
   .jewellery-container {
     &--head {
       background-position: 70% 90%;
       height: 307px;
     }
+
     &--slider {
       margin: 32px 0;
       height: 200px;
     }
   }
+
+  //single product
+  .product-container {
+
+    &--details {
+      margin: 64px 0;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      align-items: stretch;
+
+      &--image-container {
+        display: flex;
+        align-items: stretch;
+        width: 400px;
+
+        &--unselected-images {
+          height: 300px;
+
+          img {
+            height: 100px;
+            width: 100px;
+            border: solid 1px #ffffff;
+            cursor: pointer;
+          }
+        }
+
+        &--selected-images {
+          img {
+            height: 300px;
+            width: 300px;
+            background-position: center;
+          }
+        }
+      }
+
+      &--info-container {
+        max-width: 600px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &--topic {
+          h1 {
+            font-size: 40px;
+          }
+        }
+
+        &--category-and-availiability {
+          display: flex;
+          text-transform: capitalize;
+          justify-content: space-between;
+          font-size: 20px;
+
+          p {
+            .in-stock {
+              color: #37ad23;
+            }
+
+            .out-of-stock {
+              color: #e93c3c;
+            }
+          }
+        }
+
+        &--price {
+          font-size: 30px;
+          font-weight: 600;
+          border-top: solid 2px #000000;
+          border-bottom: solid 2px #000000;
+
+          &--has-offer-price {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            &--old {
+              text-decoration: line-through;
+            }
+          }
+        }
+
+        &--details {
+          font-size: 20px;
+        }
+      }
+    }
+
+
+    &--details {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 100%;
+      justify-content: center;
+    }
+
+    &--similar {
+      &--header {
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      &--body {
+        display: block;
+
+        &-products {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        &-category {
+          width: 100%;
+          justify-content: center;
+          &--head {
+            width: 100%;
+            text-align: center;
+          }
+
+          &--body {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+  }
+
+
 }
 
 // Mobile
 @media screen and (max-width: 430px) and (min-width: 300px) {
+
   // Index
   .home-container {
     &--hero {
       height: 214px;
     }
+
     &--about {
       &--body {
         p {
           font-size: 0.8rem;
           line-height: 25px;
         }
+
         .ab-img {
           height: 247px;
         }
       }
     }
+
     &--jewelleries {
       margin: 38px 10%;
+
       &--header {
         h1 {
           font-size: 1.5rem;
         }
       }
+
       &--body {
         div {
           img {
@@ -1367,14 +1555,17 @@ body {
         }
       }
     }
+
     &--offers {
       img {
         width: 100%;
         height: 217px;
       }
     }
+
     &--new-collection {
       margin: 50px 10%;
+
       &--header {
         h1 {
           font-size: 1.5rem;
@@ -1404,28 +1595,35 @@ body {
       &--bg {
         height: 147px;
         background-position: 70% 90%;
+
         h1 {
           font-size: 2.2rem;
         }
       }
+
       &--about {
         p {
           font-size: 15px;
         }
       }
     }
+
     &--chairman {
       margin: 58px 12%;
+
       &--header {
         h1 {
           font-size: 2rem;
         }
       }
+
       &--body {
         img {
           border-radius: 0;
         }
+
         gap: 20px;
+
         p {
           font-size: 15px;
           line-height: 30px;
@@ -1439,10 +1637,12 @@ body {
     &--head {
       height: 147px;
       background-position: 70% 90%;
+
       h1 {
         font-size: 2.2rem;
       }
     }
+
     &--slider {
       margin: 32px 0;
       height: 200px;
@@ -1477,16 +1677,25 @@ body {
     }
   }
 
+  .offers-container--head {
+    height: 147px;
+  }
+
+  .new-container--head {
+    height: 147px;
+  }
+
   // Contact
   .contact-container {
     &--head {
-      height: 147px;
+      height: 147px;  height: 147px;
       background-position: 70% 90%;
 
       h1 {
         font-size: 2.2rem;
       }
     }
+
     &--body {
       flex-wrap: wrap-reverse;
       justify-content: center;
@@ -1548,6 +1757,7 @@ body {
           display: flex;
           flex-direction: column;
           gap: 16px;
+
           div {
             display: flex;
             flex-direction: column;
@@ -1560,6 +1770,7 @@ body {
               border: none;
               border-bottom: solid 1px #000000;
             }
+
             // Removed the increment and decrement buttons
             input[type="number"]::-webkit-inner-spin-button,
             input[type="number"]::-webkit-outer-spin-button {
@@ -1583,6 +1794,76 @@ body {
         }
       }
     }
+  }
+
+  .product-container {
+
+    &--details {
+      &--info-container {
+        &--topic {
+          h1 {
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
+
+        &--category-and-availiability {
+          margin-top: 20px;
+          font-size: 15px;
+        }
+
+        &--price {
+          margin-top: 20px;
+          font-size: 18px;
+        }
+
+        &--details {
+          margin-top: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+
+
+    &--details {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 100%;
+      justify-content: center;
+    }
+
+    &--similar {
+      &--header {
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      &--body {
+        display: block;
+
+        &-products {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        &-category {
+          &--head {
+            width: 100%;
+            text-align: center;
+          }
+
+          &--body {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+  }
+  .product-container--similar--body-category--head{
+    font-size: 35px;
   }
 }
 
@@ -1691,6 +1972,22 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .jewellery-container--filter select {
+    display: block;
+  }
+
+  .jewellery-container--filter ul {
+    display: none;
+  }
+
+  .home-container--jewelleries--header--filter-bar-mobile {
+    display: block;
+  }
+
+  .home-container--jewelleries--header--filter-bar {
+    display: none;
+  }
+
   .footer-container {
     &--body {
       &--description {
@@ -1719,6 +2016,7 @@ body {
 
       &--links {
         width: 30%;
+
         h1 {
           font-size: 1.5rem;
           padding: 0 0 5px 0;

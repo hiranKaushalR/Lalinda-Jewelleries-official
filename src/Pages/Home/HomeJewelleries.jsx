@@ -37,7 +37,7 @@ function HomeJewelleries() {
             </div>
           </button>
         </div>
-        <div className="home-container--jewelleries--header--filter-bar-mobile flex justify-end">
+        <div className="home-container--jewelleries--header--filter-bar-mobile">
           <select name="" id="" onChange={(event) => setHomeFilter (event.target.value)}>
             <option value="all">All</option>
             <option value="ring">Rings</option>
@@ -71,7 +71,7 @@ function HomeJewelleries() {
                 // Render the item only if it does not have an offer
                 !item.hasoffer && (
                   <div key={item.id}>
-                    <Link to={`${item.id}`}>
+                    <Link to={`jewellery/${item.id}`}>
                       <img src={item.img[0]} alt={item.name} />
                       <span>
                         <p className="name">{item.name}</p>
