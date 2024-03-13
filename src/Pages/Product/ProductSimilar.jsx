@@ -23,7 +23,7 @@ function ProductSimilar(props) {
         <div className="product-container--similar--body-products">
           {displayItems.map((item) => (
             <div key={item.id}>
-              <Link to={`/${item.id}`}>
+              <Link to={`/jewellery/${item.id}`}>
                 <img src={item.img[0]} alt={item.name} />
                 {item.hasOffer ? (
                   // If there is an offer, this part is rendered

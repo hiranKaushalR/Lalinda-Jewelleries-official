@@ -13,11 +13,7 @@ body {
 
 // ./src/Components
 // Header.jsx
-.position-fixed {
-  display: flex;
-  min-width: 100%;
-  justify-content: center;
-}
+
 
 .header-container {
   z-index: 99;
@@ -1317,6 +1313,8 @@ body {
         background-position: 70% 90%;
       }
     }
+
+    
 
     &--chairman {
       margin: 58px 12%;
