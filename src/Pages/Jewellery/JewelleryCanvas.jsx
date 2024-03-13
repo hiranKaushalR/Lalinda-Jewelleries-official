@@ -2,7 +2,6 @@ import React from "react";
 import { useContext } from "react";
 import JewelleryHead from "./JewelleryHead";
 import JewelleryFilter from "./JewelleryFilter";
-import JewellerySlider from "./JewellerySlider";
 import JewelleryRings from "./JewelleryRings";
 import JewelleryBracelets from "./JewelleryBracelets";
 import JewelleryChains from "./JewelleryChains";
@@ -21,7 +20,6 @@ function JewelleryCanvas(props) {
       <JewelleryFilter
         setSelectedCategoryInJewellery={setSelectedCategoryInJewellery}
       />
-      <JewellerySlider />
       {selectedCategoryInJewellery === "rings" ||
       selectedCategoryInJewellery === "all" ? (
         <JewelleryRings />

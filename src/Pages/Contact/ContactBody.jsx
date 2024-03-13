@@ -4,14 +4,7 @@ import { contactDetails } from "../../Constant";
 function ContactBody() {
   return (
     <div className="contact-container--body">
-      <div className="contact-container--body--contact-details">
-        {contactDetails.map((contactDetail) => (
-          <div>
-            <p className="type">{contactDetail.type}</p>
-            <p className="detail">{contactDetail.detail}</p>
-          </div>
-        ))}
-      </div>
+ 
       <form className="outline-none">
         <div className="form-first-half">
           <div className="form-first-half-name">
@@ -43,6 +36,14 @@ function ContactBody() {
           </div>
         </div>
       </form>
+      <div className="contact-container--body--contact-details">
+        {contactDetails.map((contactDetail) => (
+          <div>
+            <p className="type">{contactDetail.type}</p>
+            <p className="detail">{contactDetail.detail}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
