@@ -141,37 +141,37 @@ function Header() {
         {/* Desktop Navigation */}
         <ul className="header-nav-container  hidden lg:flex">
           <li>
-            <NavLink to="/" activeClassName="active-styles">
+            <NavLink to="/"className={({ isActive }) => (isActive ? "active-styles" : 'non-active-styles')}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" activeClassName="active-styles">
+            <NavLink to="/about"className={({ isActive }) => (isActive ? "active-styles" : 'non-active-styles')}>
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to="/jewellery" activeClassName="active-styles">
+            <NavLink to="/jewellery"className={({ isActive }) => (isActive ? "active-styles" : 'non-active-styles')}>
               Jewellery
             </NavLink>
           </li>
           <li>
-            <NavLink to="/offers" activeClassName="active-styles">
+            <NavLink to="/offers"className={({ isActive }) => (isActive ? "active-styles" : 'non-active-styles')}>
               Offers
             </NavLink>
           </li>
           <li>
-            <NavLink to="/new" activeClassName="active-styles">
+            <NavLink to="/new"className={({ isActive }) => (isActive ? "active-styles" : 'non-active-styles')}>
               What's New
             </NavLink>
           </li>
           <li>
-            <NavLink to="/services" activeClassName="active-styles">
+            <NavLink to="/services"className={({ isActive }) => (isActive ? "active-styles" : 'non-active-styles')}>
               Services
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeClassName="active-styles">
+            <NavLink to="/contact"className={({ isActive }) => (isActive ? "active-styles" : 'non-active-styles')}>
               Contact
             </NavLink>
           </li>
