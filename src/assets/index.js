@@ -3,7 +3,8 @@ import facebook from "./facebook.png";
 import instargram from "./instargram.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-export { facebook, instargram, close, menu };
+import logo from './logo.png'
+export { facebook, instargram, close, menu, logo };
 
 // Slider in Home
 import heroSlider1 from "./hero-slider-1.png";

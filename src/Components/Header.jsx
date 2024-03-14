@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
-import { menu, close } from "../assets";
+import { menu, close, logo } from "../assets";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
@@ -74,7 +74,7 @@ function Header() {
     <header className="header-container">
       <div className="header-container--child">
         <h1>
-          <NavLink to="/">LOGO</NavLink>
+          <NavLink to="/"><img src={logo} alt="" /></NavLink>
         </h1>
 
         {/* Mobile Navigation */}

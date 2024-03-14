@@ -20,6 +20,7 @@ body {
   top: 0;
   background-color: #fff;
   padding: 30px 5%;
+  box-shadow: 1px 0 5px;
 
   &--child {
     display: flex;
@@ -27,11 +28,17 @@ body {
     align-items: center;
 
     h1 {
-      font-size: 2rem;
-
       a {
         text-decoration: none;
         color: #000000;
+
+        img {
+          width: 80px;
+          height: 60px;
+          object-fit: cover;
+          padding: 0;
+          margin: 0;
+        }
       }
     }
 
@@ -129,6 +136,34 @@ body {
 
     p {
       text-align: center;
+    }
+  }
+}
+
+.no-container {
+  height: 70vh;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  &--child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    h1 {
+      font-size: 64px;
+    }
+
+    button {
+      background-color: #df8931;
+      padding: 16px 32px;
+      font-size: 20px;
+      font-family: 'poppins', sans-serif;
+      font-weight: 500;
+      color: #fff;
+      border-radius: 16px;
     }
   }
 }
@@ -885,11 +920,47 @@ body {
     }
 
     &-products {
-      display: flex;
-      justify-content: space-between;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(30%, 1fr)
+      ); // Adjust column size as needed
+      grid-auto-rows: auto;
+      grid-auto-flow: dense; // Pack grid items tightly
+      justify-content: flex-end; // Justify items between grid tracks
+      gap: 24px;
+
+      a {
+        display: block; // Ensure link takes up the entire space of its container
+      }
 
       img {
-        width: 30%;
+        width: 800px;
+        max-height: 400px;
+        height: 100%;
+        object-fit: cover; // Maintain aspect ratio while covering the container
+      }
+    }
+    .chain-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 16px 0;
+      gap: 8px;
+
+      button {
+        border: solid 1px #000000;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .selcted-page-pagination {
+        background-color: #df8931;
+        color: #f2f2f2;
+        border: solid 2px #000;
       }
     }
   }
@@ -920,15 +991,47 @@ body {
     }
 
     &-products {
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(30%, 1fr)
+      ); // Adjust column size as needed
+      grid-auto-rows: auto;
+      grid-auto-flow: dense; // Pack grid items tightly
+      justify-content: flex-end; // Justify items between grid tracks
       gap: 24px;
 
-      .product-section-2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+      a {
+        display: block; // Ensure link takes up the entire space of its container
+      }
+
+      img {
+        width: 800px;
+        max-height: 400px;
+        height: 100%;
+        object-fit: cover; // Maintain aspect ratio while covering the container
+      }
+    }
+    .earring-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 16px 0;
+      gap: 8px;
+
+      button {
+        border: solid 1px #000000;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .selcted-page-pagination {
+        background-color: #df8931;
+        color: #f2f2f2;
+        border: solid 2px #000;
       }
     }
   }
@@ -1058,18 +1161,26 @@ body {
 
     &--more {
       display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
 
       div {
-        width: 50%;
+        min-width: 300px;
+        width: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap: 16px;
+        margin: 32px 0;
 
         img {
           width: 100%;
+          height: 500px;
+          border-radius: 16px;
+          object-fit: cover;
         }
 
         button {
