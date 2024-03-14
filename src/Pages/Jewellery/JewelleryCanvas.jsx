@@ -22,7 +22,7 @@ function JewelleryCanvas(props) {
       />
       {selectedCategoryInJewellery === "rings" ||
       selectedCategoryInJewellery === "all" ? (
-        <JewelleryRings />
+        <JewelleryRings selectedCategoryInJewellery={selectedCategoryInJewellery}/>
       ) : null}
       {selectedCategoryInJewellery === "bracelets" ||
       selectedCategoryInJewellery === "all" ? (

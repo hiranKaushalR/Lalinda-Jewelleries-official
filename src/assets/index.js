@@ -69,6 +69,28 @@ import jewelleryRing1 from "./jewellery-ring-1.png";
 import jewelleryRing2 from "./jewellery-ring-2.png";
 import jewelleryRing3 from "./jewellery-ring-3.png";
 import jewelleryRing4 from "./jewellery-ring-4.png";
+import jewelleryRing5 from "./jewellery-ring-5.jpeg";
+import jewelleryRing6 from "./jewellery-ring-6.jpeg";
+import jewelleryRing7 from "./jewellery-ring-7.png";
+import jewelleryRing8 from "./jewellery-ring-8.jpeg";
+import jewelleryRing9 from "./jewellery-ring-9.jpeg";
+import jewelleryRing10 from "./jewellery-ring-10.jpeg";
+import jewelleryRing11 from "./jewellery-ring-11.jpeg";
+import jewelleryRing12 from "./jewellery-ring-12.jpeg";
+import jewelleryRing13 from "./jewellery-ring-13.jpeg";
+import jewelleryRing14 from "./jewellery-ring-14.jpeg";
+import jewelleryRing15 from "./jewellery-ring-15.jpeg";
+import jewelleryRing16 from "./jewellery-ring-16.jpeg";
+import jewelleryRing17 from "./jewellery-ring-17.jpeg";
+import jewelleryRing18 from "./jewellery-ring-18.jpeg";
+import jewelleryRing19 from "./jewellery-ring-19.jpeg";
+import jewelleryRing20 from "./jewellery-ring-20.jpeg";
+import jewelleryRing21 from "./jewellery-ring-21.jpeg";
+import jewelleryRing22 from "./jewellery-ring-22.jpeg";
+import jewelleryRing23 from "./jewellery-ring-23.jpeg";
+import jewelleryRing24 from "./jewellery-ring-24.jpeg";
+import jewelleryRing25 from "./jewellery-ring-25.jpeg";
+import jewelleryRing26 from "./jewellery-ring-26.jpeg";
 
 import jewelleryBracelet1 from "./jewellery-bracelet-1.png";
 import jewelleryBracelet2 from "./jewellery-bracelet-2.png";
@@ -88,6 +110,29 @@ export {
   jewelleryRing2,
   jewelleryRing3,
   jewelleryRing4,
+  jewelleryRing5,
+  jewelleryRing6,
+  jewelleryRing7,
+  jewelleryRing8,
+  jewelleryRing9,
+  jewelleryRing10,
+  jewelleryRing11,
+  jewelleryRing12,
+  jewelleryRing13,
+  jewelleryRing14,
+  jewelleryRing15,
+  jewelleryRing16,
+  jewelleryRing17,
+  jewelleryRing18,
+  jewelleryRing19,
+  jewelleryRing20,
+  jewelleryRing21,
+  jewelleryRing22,
+  jewelleryRing23,
+  jewelleryRing24,
+  jewelleryRing25,
+  jewelleryRing26,
+  // 
   jewelleryBracelet1,
   jewelleryBracelet2,
   jewelleryChain1,
