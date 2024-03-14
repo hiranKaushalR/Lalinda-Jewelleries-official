@@ -14,7 +14,6 @@ function JewelleryRings(props) {
   for (let i = 1; i < Math.ceil(items.length / postPerPage); i++) {
     pages.push(i);
   }
-  console.log (currentPage)
 
   return (
     <div className="jewellery-container--rings">
