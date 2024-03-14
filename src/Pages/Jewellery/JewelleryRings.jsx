@@ -11,7 +11,8 @@ function JewelleryRings(props) {
   const firstPostIndex = lastPostIndex - postPerPage;
 
   let pages = [];
-  for (let i = 1; i < Math.ceil(items.length / postPerPage); i++) {
+  let ringItems = items.filter(item => item.type === 'ring');
+  for (let i = 1; i < Math.ceil(ringItems.length / postPerPage) + 1; i++) {
     pages.push(i);
   }
 

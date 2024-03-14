@@ -3,7 +3,7 @@ import { items } from "../../Constant";
 import { Link } from "react-router-dom";
 
 function ProductSimilar(props) {
-  const { product, setSelectedCategoryInJewellery } = props;
+  const { product, setSelectedCategoryInJewellery, setSelectedImage } = props;
 
   // Filter items with matching type and exclude the current product
   const similarItems = items.filter(
@@ -23,7 +23,7 @@ function ProductSimilar(props) {
         <div className="product-container--similar--body-products">
           {displayItems.map((item) => (
             <div key={item.id}>
-              <Link to={`/jewellery/${item.id}`}>
+              <Link to={`/jewellery/${item.id}`} onClick={() => setSelectedImage (0)}>
                 <img src={item.img[0]} alt={item.name} />
                 {item.hasOffer ? (
                   // If there is an offer, this part is rendered

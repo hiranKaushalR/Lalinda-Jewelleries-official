@@ -12,8 +12,6 @@ function JewelleryCanvas(props) {
   const { selectedCategoryInJewellery, setSelectedCategoryInJewellery } =
     useContext(CategoryContext);
 
-  console.log(selectedCategoryInJewellery);
-
   return (
     <div className="jewellery-container">
       <JewelleryHead />
@@ -22,19 +20,27 @@ function JewelleryCanvas(props) {
       />
       {selectedCategoryInJewellery === "rings" ||
       selectedCategoryInJewellery === "all" ? (
-        <JewelleryRings selectedCategoryInJewellery={selectedCategoryInJewellery}/>
+        <JewelleryRings
+          selectedCategoryInJewellery={selectedCategoryInJewellery}
+        />
       ) : null}
       {selectedCategoryInJewellery === "bracelets" ||
       selectedCategoryInJewellery === "all" ? (
-        <JewelleryBracelets />
+        <JewelleryBracelets
+          selectedCategoryInJewellery={selectedCategoryInJewellery}
+        />
       ) : null}
       {selectedCategoryInJewellery === "chains" ||
       selectedCategoryInJewellery === "all" ? (
-        <JewelleryChains />
+        <JewelleryChains
+          selectedCategoryInJewellery={selectedCategoryInJewellery}
+        />
       ) : null}
       {selectedCategoryInJewellery === "earrings" ||
       selectedCategoryInJewellery === "all" ? (
-        <JewelleryEarrings />
+        <JewelleryEarrings
+          selectedCategoryInJewellery={selectedCategoryInJewellery}
+        />
       ) : null}
     </div>
   );

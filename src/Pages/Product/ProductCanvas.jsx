@@ -11,6 +11,7 @@ function ProductCanvas(props) {
   const { selectedCategoryInJewellery, setSelectedCategoryInJewellery } =
     useContext(CategoryContext);
   const [product, setProduct] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(0); 
   const { id } = useParams();
 
   useEffect(() => {
@@ -28,7 +29,7 @@ function ProductCanvas(props) {
       </Link>
       <div>
         {product ? (
-          <ProductDetails product={product} />
+          <ProductDetails product={product} selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>
         ) : (
           <p>Product not found</p>
         )}
@@ -38,6 +39,7 @@ function ProductCanvas(props) {
         {product ? (
           <ProductSimilar
             product={product}
+            setSelectedImage={setSelectedImage}
             setSelectedCategoryInJewellery={setSelectedCategoryInJewellery}
           />
         ) : (

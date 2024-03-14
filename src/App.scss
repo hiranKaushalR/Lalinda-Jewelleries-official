@@ -814,11 +814,47 @@ body {
     }
 
     &-products {
-      display: flex;
-      justify-content: space-between;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(30%, 1fr)
+      ); // Adjust column size as needed
+      grid-auto-rows: auto;
+      grid-auto-flow: dense; // Pack grid items tightly
+      justify-content: flex-end; // Justify items between grid tracks
+      gap: 24px;
+
+      a {
+        display: block; // Ensure link takes up the entire space of its container
+      }
 
       img {
-        width: 48%;
+        width: 800px;
+        max-height: 400px;
+        height: 100%;
+        object-fit: cover; // Maintain aspect ratio while covering the container
+      }
+    }
+    .bracelet-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 16px 0;
+      gap: 8px;
+
+      button {
+        border: solid 1px #000000;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .selcted-page-pagination {
+        background-color: #df8931;
+        color: #f2f2f2;
+        border: solid 2px #000;
       }
     }
   }

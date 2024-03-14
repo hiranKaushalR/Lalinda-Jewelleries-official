@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
 function ProductDetails(props) {
-  const [selectedImage, setSelectedImage] = useState(0); // Initialize selectedImage state to 0
-  const { product } = props;
+  const { product, selectedImage, setSelectedImage } = props;
 
   // Function to handle image selection
   const handleImageSelect = (index) => {
