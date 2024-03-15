@@ -75,7 +75,10 @@ function HomeJewelleries() {
                       <img src={item.img[0]} alt={item.name} />
                       <span>
                         <p className="name">{item.name}</p>
-                        <p className="price">LKR {item.price}</p>
+                        <div className="">
+                          <p>{item.carat}k</p>
+                          <p>{item.weight}g</p>
+                        </div>
                       </span>
                       <p
                         className={`${
