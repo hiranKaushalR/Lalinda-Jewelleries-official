@@ -23,45 +23,34 @@ function ProductSimilar(props) {
         <div className="product-container--similar--body-products">
           {displayItems.map((item) => (
             <div key={item.id}>
-              <Link to={`/jewellery/${item.id}`} onClick={() => setSelectedImage (0)}>
+              <Link
+                to={`/jewellery/${item.id}`}
+                onClick={() => setSelectedImage(0)}
+              >
                 <img src={item.img[0]} alt={item.name} />
-                {item.hasOffer ? (
-                  // If there is an offer, this part is rendered
-                  <span>
-                    <span>
-                      <p className="has-offer-name">{item.name}</p>{" "}
-                      <p
-                        className={`${
-                          item.isStock ? "in" : "out"
-                        } has-offer-stock-status`}
-                      >
-                        {item.isStock ? "In-stock" : "Out of stock"}
-                      </p>
-                    </span>
-                    <span className="has-offer-price">
-                      <p className="has-offer-price-old">LKR {item.price}</p>
-                      <p className="has-offer-price-new">
-                        LKR {item.offerPrice}
-                      </p>
-                    </span>
-                  </span>
-                ) : (
-                  // If there isn't an offer, this part is rendered
 
+                <span>
                   <span>
-                    <span>
-                      <p className="has-no-offer-name">{item.name}</p>
-                      <p className="has-no-offer-price">LKR {item.price}</p>
-                    </span>
+                    <p className="has-offer-name">{item.name}</p>{" "}
+                    <div className="carat-weight--container">
+                      <p className="carat">{item.carat}k</p>
+                      <p className="weight">{item.weight}g</p>
+                    </div>
                     <p
                       className={`${
                         item.isStock ? "in" : "out"
-                      } has-no-offer-stock-status`}
+                      } has-offer-stock-status`}
                     >
                       {item.isStock ? "In-stock" : "Out of stock"}
                     </p>
                   </span>
-                )}
+                  <span className="has-offer-price">
+                    {/* <p className="has-offer-price-old">LKR {item.price}</p>
+                      <p className="has-offer-price-new">
+                        LKR {item.offerPrice}
+                      </p> */}
+                  </span>
+                </span>
               </Link>{" "}
             </div>
           ))}

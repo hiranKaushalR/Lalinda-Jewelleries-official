@@ -69,15 +69,15 @@ function HomeJewelleries() {
             .slice (0, 3).map(
               (item) =>
                 // Render the item only if it does not have an offer
-                !item.hasoffer && (
+                !item.hasOffer && (
                   <div key={item.id}>
                     <Link to={`jewellery/${item.id}`}>
                       <img src={item.img[0]} alt={item.name} />
                       <span>
                         <p className="name">{item.name}</p>
-                        <div className="">
-                          <p>{item.carat}k</p>
-                          <p>{item.weight}g</p>
+                        <div className="carat-weight--container">
+                          <p className="carat">{item.carat}k</p>
+                          <p className="weight">{item.weight}g</p>
                         </div>
                       </span>
                       <p

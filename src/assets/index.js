@@ -3,7 +3,7 @@ import facebook from "./facebook.png";
 import instargram from "./instargram.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import logo from './logo.png'
+import logo from "./logo.png";
 export { facebook, instargram, close, menu, logo };
 
 // Slider in Home
@@ -66,13 +66,13 @@ export { newImage1, newImage2, newImage3, newImage4 };
 // Jewellery Page
 import jewellerySliderImage from "./jewellery-slider.png";
 
-import jewelleryRing1 from "./jewellery-ring-1.png";
-import jewelleryRing2 from "./jewellery-ring-2.png";
-import jewelleryRing3 from "./jewellery-ring-3.png";
-import jewelleryRing4 from "./jewellery-ring-4.png";
+import jewelleryRing1 from "./jewellery-ring-1.jpeg";
+import jewelleryRing2 from "./jewellery-ring-2.jpeg";
+import jewelleryRing3 from "./jewellery-ring-3.jpeg";
+import jewelleryRing4 from "./jewellery-ring-4.jpeg";
 import jewelleryRing5 from "./jewellery-ring-5.jpeg";
 import jewelleryRing6 from "./jewellery-ring-6.jpeg";
-import jewelleryRing7 from "./jewellery-ring-7.png";
+import jewelleryRing7 from "./jewellery-ring-7.jpeg";
 import jewelleryRing8 from "./jewellery-ring-8.jpeg";
 import jewelleryRing9 from "./jewellery-ring-9.jpeg";
 import jewelleryRing10 from "./jewellery-ring-10.jpeg";
@@ -92,9 +92,20 @@ import jewelleryRing23 from "./jewellery-ring-23.jpeg";
 import jewelleryRing24 from "./jewellery-ring-24.jpeg";
 import jewelleryRing25 from "./jewellery-ring-25.jpeg";
 import jewelleryRing26 from "./jewellery-ring-26.jpeg";
+import jewelleryRing27 from "./jewellery-ring-27.jpeg";
+import jewelleryRing28 from "./jewellery-ring-28.jpeg";
+import jewelleryRing29 from "./jewellery-ring-29.jpeg";
+import jewelleryRing30 from "./jewellery-ring-30.jpeg";
+import jewelleryRing31 from "./jewellery-ring-31.jpeg";
+import jewelleryRing32 from "./jewellery-ring-32.jpeg";
+import jewelleryRing33 from "./jewellery-ring-33.jpeg";
+import jewelleryRing34 from "./jewellery-ring-34.jpeg";
+import jewelleryRing35 from "./jewellery-ring-35.jpeg";
+import jewelleryRing36 from "./jewellery-ring-36.jpeg";
+import jewelleryRing37 from "./jewellery-ring-37.jpeg";
 
-import jewelleryBracelet1 from "./jewellery-bracelet-1.png";
-import jewelleryBracelet2 from "./jewellery-bracelet-2.png";
+import jewelleryBracelet1 from "./jewellery-bracelet-1.jpeg";
+import jewelleryBracelet2 from "./jewellery-bracelet-2.jpeg";
 import jewelleryBracelet3 from "./jewellery-bracelet-3.jpeg";
 import jewelleryBracelet4 from "./jewellery-bracelet-4.jpeg";
 import jewelleryBracelet5 from "./jewellery-bracelet-5.jpeg";
@@ -115,58 +126,34 @@ import jewelleryBracelet19 from "./jewellery-bracelet-19.jpeg";
 import jewelleryBracelet20 from "./jewellery-bracelet-20.jpeg";
 import jewelleryBracelet21 from "./jewellery-bracelet-21.jpeg";
 import jewelleryBracelet22 from "./jewellery-bracelet-22.jpeg";
-import jewelleryBracelet23 from "./jewellery-bracelet-23.png";
-import jewelleryBracelet24 from "./jewellery-bracelet-24.png";
+import jewelleryBracelet23 from "./jewellery-bracelet-23.jpeg";
+import jewelleryBracelet24 from "./jewellery-bracelet-24.jpeg";
+import jewelleryBracelet25 from "./jewellery-bracelet-25.jpeg";
 
-import jewelleryChain1 from "./jewellery-chain-1.png";
-import jewelleryChain2 from "./jewellery-chain-2.png";
-import jewelleryChain3 from "./jewellery-chain-3.png";
+import jewelleryChain1 from "./jewellery-chain-1.jpeg";
+import jewelleryChain2 from "./jewellery-chain-2.jpeg";
+import jewelleryChain3 from "./jewellery-chain-3.jpeg";
 import jewelleryChain4 from "./jewellery-chain-4.jpeg";
-import jewelleryChain5 from "./jewellery-chain-5.png";
+import jewelleryChain5 from "./jewellery-chain-5.jpeg";
 import jewelleryChain6 from "./jewellery-chain-6.jpeg";
 import jewelleryChain7 from "./jewellery-chain-7.jpeg";
 import jewelleryChain8 from "./jewellery-chain-8.jpeg";
 import jewelleryChain9 from "./jewellery-chain-9.jpeg";
 import jewelleryChain10 from "./jewellery-chain-10.jpeg";
 import jewelleryChain11 from "./jewellery-chain-11.jpeg";
-import jewelleryChain12 from "./jewellery-chain-12.png";
+import jewelleryChain12 from "./jewellery-chain-12.jpeg";
 import jewelleryChain13 from "./jewellery-chain-13.jpeg";
 import jewelleryChain14 from "./jewellery-chain-14.jpeg";
 import jewelleryChain15 from "./jewellery-chain-15.jpeg";
 import jewelleryChain16 from "./jewellery-chain-16.jpeg";
 import jewelleryChain17 from "./jewellery-chain-17.jpeg";
-import jewelleryChain18 from "./jewellery-chain-18.jpeg";
-import jewelleryChain19 from "./jewellery-chain-19.jpeg";
-import jewelleryChain20 from "./jewellery-chain-20.jpeg";
-import jewelleryChain21 from "./jewellery-chain-21.jpeg";
-import jewelleryChain22 from "./jewellery-chain-22.jpeg";
-import jewelleryChain23 from "./jewellery-chain-23.jpeg";
-import jewelleryChain24 from "./jewellery-chain-24.jpeg";
-import jewelleryChain25 from "./jewellery-chain-25.jpeg";
-import jewelleryChain26 from "./jewellery-chain-26.jpeg";
-import jewelleryChain27 from "./jewellery-chain-27.jpeg";
-import jewelleryChain28 from "./jewellery-chain-28.jpeg";
-import jewelleryChain29 from "./jewellery-chain-29.jpeg";
-import jewelleryChain30 from "./jewellery-chain-30.png";
 
-import jewelleryEarrings1 from "./jewellery-earrings-1.png";
+import jewelleryEarrings1 from "./jewellery-earrings-1.jpeg";
 import jewelleryEarrings2 from "./jewellery-earrings-2.jpeg";
 import jewelleryEarrings3 from "./jewellery-earrings-3.jpeg";
-import jewelleryEarrings4 from "./jewellery-earrings-4.png";
+import jewelleryEarrings4 from "./jewellery-earrings-4.jpeg";
 import jewelleryEarrings5 from "./jewellery-earrings-5.jpeg";
 import jewelleryEarrings6 from "./jewellery-earrings-6.jpeg";
-import jewelleryEarrings7 from "./jewellery-earrings-7.jpeg";
-import jewelleryEarrings8 from "./jewellery-earrings-8.jpeg";
-import jewelleryEarrings9 from "./jewellery-earrings-9.jpeg";
-import jewelleryEarrings10 from "./jewellery-earrings-10.jpeg";
-import jewelleryEarrings11 from "./jewellery-earrings-11.jpeg";
-import jewelleryEarrings12 from "./jewellery-earrings-12.jpeg";
-import jewelleryEarrings13 from "./jewellery-earrings-13.jpeg";
-import jewelleryEarrings14 from "./jewellery-earrings-14.jpeg";
-import jewelleryEarrings15 from "./jewellery-earrings-15.jpeg";
-import jewelleryEarrings16 from "./jewellery-earrings-16.jpeg";
-import jewelleryEarrings17 from "./jewellery-earrings-17.jpeg";
-import jewelleryEarrings18 from "./jewellery-earrings-18.jpeg";
 
 export {
   jewellerySliderImage,
@@ -197,6 +184,17 @@ export {
   jewelleryRing24,
   jewelleryRing25,
   jewelleryRing26,
+  jewelleryRing27,
+  jewelleryRing28,
+  jewelleryRing29,
+  jewelleryRing30,
+  jewelleryRing31,
+  jewelleryRing32,
+  jewelleryRing33,
+  jewelleryRing34,
+  jewelleryRing35,
+  jewelleryRing36,
+  jewelleryRing37,
   // bracelets
   jewelleryBracelet1,
   jewelleryBracelet2,
@@ -222,6 +220,7 @@ export {
   jewelleryBracelet22,
   jewelleryBracelet23,
   jewelleryBracelet24,
+  jewelleryBracelet25,
   // Chain
   jewelleryChain1,
   jewelleryChain2,
@@ -240,19 +239,6 @@ export {
   jewelleryChain15,
   jewelleryChain16,
   jewelleryChain17,
-  jewelleryChain18,
-  jewelleryChain19,
-  jewelleryChain20,
-  jewelleryChain21,
-  jewelleryChain22,
-  jewelleryChain23,
-  jewelleryChain24,
-  jewelleryChain25,
-  jewelleryChain26,
-  jewelleryChain27,
-  jewelleryChain28,
-  jewelleryChain29,
-  jewelleryChain30,
   // Earrings
   jewelleryEarrings1,
   jewelleryEarrings2,
@@ -260,16 +246,4 @@ export {
   jewelleryEarrings4,
   jewelleryEarrings5,
   jewelleryEarrings6,
-  jewelleryEarrings7,
-  jewelleryEarrings8,
-  jewelleryEarrings9,
-  jewelleryEarrings10,
-  jewelleryEarrings11,
-  jewelleryEarrings12,
-  jewelleryEarrings13,
-  jewelleryEarrings14,
-  jewelleryEarrings15,
-  jewelleryEarrings16,
-  jewelleryEarrings17,
-  jewelleryEarrings18,
 };

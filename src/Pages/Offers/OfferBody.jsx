@@ -25,6 +25,10 @@ function OfferBody() {
                   <span>
                     <span className="name-and-stock-status">
                       <p className="name-and-stock-status--name">{item.name}</p>{" "}
+                      <div className="carat-weight--container">
+                      <p className="carat">{item.carat}k</p>
+                      <p className="weight">{item.weight}g</p>
+                    </div>
                       <p
                         className={`${
                           item.isStock ? "in" : "out"
@@ -33,12 +37,12 @@ function OfferBody() {
                         {item.isStock ? "In-stock" : "Out of stock"}
                       </p>
                     </span>
-                    <span className="has-offer-price">
+                    {/* <span className="has-offer-price">
                       <p className="has-offer-price--old">LKR {item.price}</p>
                       <p className="has-offer-price--new">
                         LKR {item.offerPrice}
                       </p>
-                    </span>
+                    </span> */}
                   </span>
                 </Link>
               </div>

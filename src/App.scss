@@ -315,6 +315,12 @@ body {
           .price {
             color: #df8931;
           }
+
+          .carat-weight--container {
+            display: flex;
+            justify-content: space-around;
+            text-transform: lowercase;
+          }
         }
 
         .stock-status {
@@ -489,6 +495,13 @@ body {
             text-decoration: line-through;
           }
         }
+
+        &--carat-and-weight {
+          display: flex;
+          justify-content: space-evenly;
+          font-weight: 500;
+          font-size: 24px;
+        }
       }
 
       &--details {
@@ -527,20 +540,25 @@ body {
             border-radius: 16px 16px 0 0;
             width: 100%;
             height: 230px;
+            object-fit: cover;
           }
 
           span {
-            margin: 20px 0;
+            margin: 8px 0;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             column-gap: 30px;
-            row-gap: 10px;
             justify-content: center;
             align-items: center;
             font-family: "poppins", sans-serif;
 
             .has-no-offer-price {
               color: #df8931;
+            }
+
+            .carat-weight--container {
+              display: flex;
+              justify-content: space-around;
             }
           }
 
@@ -804,11 +822,11 @@ body {
       justify-content: center;
       align-items: center;
       margin: 16px 0;
-      gap: 8px;
+      gap: 4px;
 
       button {
         border: solid 1px #000000;
-        padding: 8px 16px;
+        padding: 4px 12px;
         border-radius: 4px;
         font-family: monospace;
         font-size: 20px;
@@ -938,7 +956,8 @@ body {
         width: 800px;
         max-height: 400px;
         height: 100%;
-        object-fit: cover; // Maintain aspect ratio while covering the container
+        object-fit: cover;
+        box-shadow: 1px 1px 4px 0.05px;
       }
     }
     .chain-pagination {
@@ -1085,6 +1104,7 @@ body {
           width: 100%;
           height: 250px;
           border-radius: 16px 16px 0 0;
+          object-fit: cover;
         }
 
         span {
@@ -1113,6 +1133,12 @@ body {
             &--old {
               text-decoration: line-through;
             }
+          }
+
+          .carat-weight--container {
+            display: flex;
+            justify-content: space-around;
+            text-transform: lowercase;
           }
 
           .in {

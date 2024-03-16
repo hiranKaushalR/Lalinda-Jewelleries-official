@@ -44,7 +44,7 @@ function ProductDetails(props) {
           </p>
         </div>
         <div className="product-container--details--info-container--price">
-          {product.hasOffer ? (
+          {/* {product.hasOffer ? (
             <div className="product-container--details--info-container--price--has-offer-price">
               <p className="product-container--details--info-container--price--has-offer-price--old">
                 <span>Rs.</span> <span>{product.price}</span>
@@ -62,7 +62,11 @@ function ProductDetails(props) {
                 <span>.00</span>
               </p>
             </div>
-          )}
+          )} */}
+          <div className="product-container--details--info-container--price--carat-and-weight">
+            <p className="carat">{product.carat}k</p>
+            <p className="weight">{product.weight}g</p>
+          </div>
         </div>
         <div className="product-container--details--info-container--details">
           <p>{product.details}</p>
