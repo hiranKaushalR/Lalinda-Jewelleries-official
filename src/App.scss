@@ -129,6 +129,10 @@ body {
         gap: 4px;
       }
     }
+
+    &--socialmedia--mobile {
+      display: none;
+    }
   }
 
   &--foot {
@@ -142,10 +146,10 @@ body {
 
 .no-container {
   height: 70vh;
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   &--child {
     display: flex;
     justify-content: center;
@@ -160,7 +164,7 @@ body {
       background-color: #df8931;
       padding: 16px 32px;
       font-size: 20px;
-      font-family: 'poppins', sans-serif;
+      font-family: "poppins", sans-serif;
       font-weight: 500;
       color: #fff;
       border-radius: 16px;
@@ -814,6 +818,7 @@ body {
         max-height: 400px;
         height: 100%;
         object-fit: cover; // Maintain aspect ratio while covering the container
+        box-shadow: 1px 1px 4px 0.05px;
       }
     }
 
@@ -886,6 +891,7 @@ body {
         max-height: 400px;
         height: 100%;
         object-fit: cover; // Maintain aspect ratio while covering the container
+        box-shadow: 1px 1px 4px 0.05px;
       }
     }
     .bracelet-pagination {
@@ -1029,6 +1035,7 @@ body {
         max-height: 400px;
         height: 100%;
         object-fit: cover; // Maintain aspect ratio while covering the container
+        box-shadow: 1px 1px 4px 0.05px;
       }
     }
     .earring-pagination {
@@ -1214,27 +1221,6 @@ body {
           border-radius: 6px;
           padding: 8px 32px;
         }
-      }
-    }
-  }
-
-  &--gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 16px;
-    margin: 64px 0;
-
-    &-image-section-2 {
-      display: flex;
-      align-items: stretch;
-      gap: 30px;
-
-      .section-2 {
-        display: flex;
-        flex-direction: column;
-        gap: 17px;
       }
     }
   }
@@ -2205,13 +2191,19 @@ body {
         width: 50%;
         gap: 50px;
         margin: 0;
-        display: flex;
+        display: none;
         justify-content: center;
 
         img {
           margin: 2rem 0;
           width: 40px;
         }
+      }
+
+      &--socialmedia--mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
 
       &--links {

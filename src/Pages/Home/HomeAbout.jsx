@@ -12,15 +12,17 @@ function HomeAbout() {
           <img src={homeAbout} alt="" />
         </div>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Welcome to Lalinda jewelers, where every piece tells a story of
+          craftsmanship, and a journey that spans generations. Established with
+          a vision to redefine luxury and elegance in Sri Lanka, Since 2009
+          Lalinda jewelers has evolved as a self venture, visionary with a
+          passion for the artistry of jewelry into the current destination. At
+          the heart of Lalinda jeweler's success is our dedication to
+          unparalleled craftsmanship. Each piece is a testament to the skills
+          passed down through generations, combining traditional techniques with
+          contemporary aesthetics. Our collections have evolved with the times,
+          embracing modern trends while staying true to the essence of timeless
+          beauty.
         </p>
       </div>
     </section>

@@ -8,18 +8,20 @@ function AboutBody() {
       </div>
       <div className="about-container--body--about">
         <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" {"("}The Extremes of Good
-          and Evil{")"} by Cicero, written in 45 BC. This book is a treatise on
-          the theory of ethics, very popular during the Renaissance. The first
-          line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
-          in section 1.10.32.
+          Lalinda jewelers counts over 15 years of successful enterprise as one
+          of Sri Lanka’s most illustrious entities in the industry. Over those
+          one and half decades, the Company has built invaluable repositories of
+          trust, with a loyal and growing clientele. Lalinda jewelers is one of
+          the market leader in retail jewelry segment in the formalized sector.
+          The Company earns the rich legacy of a strong brand name and trust
+          built over the years with many repeat customers appealing to both
+          niche and mass markets. Serving them with products of the most
+          pristine and enduring design and quality, always offered within a
+          “value for money” environment. The entity has a solid market presence
+          with 2 branches and Lalinda jewelers takes pride in the skills of its
+          craftsmen, designers and a fully equipped workshop with state- of the
+          art machinery and also provide the gold quality testing reports for
+          the customers satisfaction.
         </p>
       </div>
     </div>

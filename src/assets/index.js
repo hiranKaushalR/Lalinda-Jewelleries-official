@@ -154,6 +154,7 @@ import jewelleryEarrings3 from "./jewellery-earrings-3.jpeg";
 import jewelleryEarrings4 from "./jewellery-earrings-4.jpeg";
 import jewelleryEarrings5 from "./jewellery-earrings-5.jpeg";
 import jewelleryEarrings6 from "./jewellery-earrings-6.jpeg";
+import jewelleryEarrings7 from "./jewellery-earrings-7.jpeg";
 
 export {
   jewellerySliderImage,
@@ -246,4 +247,5 @@ export {
   jewelleryEarrings4,
   jewelleryEarrings5,
   jewelleryEarrings6,
+  jewelleryEarrings7,
 };

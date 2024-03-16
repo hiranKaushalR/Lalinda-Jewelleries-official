@@ -1,8 +1,6 @@
 import { heroSlider1, heroSlider2, heroSlider3 } from "../assets";
 import { facebook, instargram } from "../assets";
 import { service1, service2, service3, service4 } from "../assets";
-import { ring, bracelet, chain } from "../assets";
-import { sample1, sample2, sample3 } from "../assets";
 import { jewellerySliderImage } from "../assets";
 import {
   jewelleryRing1,
@@ -99,6 +97,7 @@ import {
   jewelleryEarrings4,
   jewelleryEarrings5,
   jewelleryEarrings6,
+  jewelleryEarrings7,
 } from "../assets";
 
 // Links and other informations
@@ -215,7 +214,7 @@ export const items = [
   },
   {
     id: "item-4",
-    name: "Golden Ring",
+    name: "Ring",
     img: [jewelleryRing2],
     type: "ring",
     carat: 18,
@@ -246,7 +245,7 @@ export const items = [
 
   {
     id: "item-5",
-    name: "Diamond Ring",
+    name: "Ring",
     img: [jewelleryRing3],
     type: "ring",
     carat: 18,
@@ -261,7 +260,7 @@ export const items = [
   },
   {
     id: "item-6",
-    name: "Golden Bracelet",
+    name: "Bracelet",
     img: [jewelleryBracelet2],
     type: "bracelet",
     carat: 18,
@@ -276,7 +275,7 @@ export const items = [
   },
   {
     id: "item-7",
-    name: "Silver Ring",
+    name: "Ring",
     img: [jewelleryRing4],
     type: "ring",
     carat: 18,
@@ -291,7 +290,7 @@ export const items = [
   },
   {
     id: "item-8",
-    name: "Gold Chain",
+    name: "Chain",
     img: [jewelleryChain2],
     type: "chain",
     carat: 18,
@@ -307,7 +306,7 @@ export const items = [
 
   {
     id: "item-9",
-    name: "Sapphire Chain",
+    name: "Chain",
     img: [jewelleryChain3],
     type: "chain",
     carat: 18,
@@ -322,7 +321,7 @@ export const items = [
   },
   {
     id: "item-10",
-    name: "Emerald Ring",
+    name: "Ring",
     img: [jewelleryRing5],
     type: "ring",
     carat: 18,
@@ -367,7 +366,7 @@ export const items = [
   },
   {
     id: "item-11",
-    name: "Pearl Bracelet",
+    name: "Bracelet",
     img: [jewelleryBracelet5],
     type: "bracelet",
     carat: 18,
@@ -382,7 +381,7 @@ export const items = [
   },
   {
     id: "item-12",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing6],
     type: "ring",
     carat: 18,
@@ -397,7 +396,7 @@ export const items = [
   },
   {
     id: "item-13",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing7],
     type: "ring",
     carat: 18,
@@ -412,7 +411,7 @@ export const items = [
   },
   {
     id: "item-14",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing8],
     type: "ring",
     carat: 18,
@@ -427,7 +426,7 @@ export const items = [
   },
   {
     id: "item-15",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing9],
     type: "ring",
     carat: 18,
@@ -442,7 +441,7 @@ export const items = [
   },
   {
     id: "item-16",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing10],
     type: "ring",
     carat: 18,
@@ -457,7 +456,7 @@ export const items = [
   },
   {
     id: "item-17",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing11],
     type: "ring",
     carat: 18,
@@ -472,7 +471,7 @@ export const items = [
   },
   {
     id: "item-18",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing12],
     type: "ring",
     carat: 18,
@@ -487,7 +486,7 @@ export const items = [
   },
   {
     id: "item-19",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing13],
     type: "ring",
     carat: 18,
@@ -502,7 +501,7 @@ export const items = [
   },
   {
     id: "item-20",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing14],
     type: "ring",
     carat: 18,
@@ -517,7 +516,7 @@ export const items = [
   },
   {
     id: "item-21",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing15],
     type: "ring",
     carat: 18,
@@ -532,7 +531,7 @@ export const items = [
   },
   {
     id: "item-22",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing16],
     type: "ring",
     carat: 18,
@@ -548,7 +547,7 @@ export const items = [
 
   {
     id: "item-23",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing17],
     type: "ring",
     carat: 18,
@@ -564,7 +563,7 @@ export const items = [
 
   {
     id: "item-24",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing18],
     type: "ring",
     carat: 18,
@@ -579,7 +578,7 @@ export const items = [
   },
   {
     id: "item-25",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing19],
     type: "ring",
     carat: 18,
@@ -594,7 +593,7 @@ export const items = [
   },
   {
     id: "item-26",
-    name: "Ruby Ring",
+    name: "Ring",
     img: [jewelleryRing20],
     type: "ring",
     carat: 18,
@@ -609,7 +608,7 @@ export const items = [
   },
   {
     id: "item-27",
-    name: "Ruby Silver Ring",
+    name: "Ring",
     img: [jewelleryRing21],
     type: "ring",
     carat: 18,
@@ -624,7 +623,7 @@ export const items = [
   },
   {
     id: "item-28",
-    name: "Diamond Gold Ring",
+    name: "Ring",
     img: [jewelleryRing22],
     type: "ring",
     carat: 18,
@@ -639,7 +638,7 @@ export const items = [
   },
   {
     id: "item-29",
-    name: "Titanium Ring",
+    name: "Ring",
     img: [jewelleryRing23],
     type: "ring",
     carat: 18,
@@ -654,7 +653,7 @@ export const items = [
   },
   {
     id: "item-30",
-    name: "Gold 25K Ring",
+    name: "Ring",
     img: [jewelleryRing24],
     type: "ring",
     carat: 18,
@@ -669,7 +668,7 @@ export const items = [
   },
   {
     id: "item-31",
-    name: "Gold 22K Ring",
+    name: "Ring",
     img: [jewelleryRing25],
     type: "ring",
     carat: 18,
@@ -684,7 +683,7 @@ export const items = [
   },
   {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing26],
     type: "ring",
     carat: 18,
@@ -699,7 +698,7 @@ export const items = [
   },
   {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing27],
     type: "ring",
     carat: 18,
@@ -713,7 +712,7 @@ export const items = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
   }, {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing28],
     type: "ring",
     carat: 18,
@@ -727,7 +726,7 @@ export const items = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
   }, {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing29],
     type: "ring",
     carat: 18,
@@ -741,7 +740,7 @@ export const items = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
   }, {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing30],
     type: "ring",
     carat: 18,
@@ -755,7 +754,7 @@ export const items = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
   }, {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing31],
     type: "ring",
     carat: 18,
@@ -769,7 +768,7 @@ export const items = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
   }, {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing32],
     type: "ring",
     carat: 18,
@@ -783,7 +782,7 @@ export const items = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
   }, {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing33],
     type: "ring",
     carat: 18,
@@ -797,7 +796,7 @@ export const items = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
   }, {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing34],
     type: "ring",
     carat: 18,
@@ -811,7 +810,7 @@ export const items = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
   }, {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing35],
     type: "ring",
     carat: 18,
@@ -825,7 +824,7 @@ export const items = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
   }, {
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing36],
     type: "ring",
     carat: 18,
@@ -839,7 +838,7 @@ export const items = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio itaque quisquam illo ipsa tempore, aperiam deserunt repellat laborum veritatis.",
   },{
     id: "item-32",
-    name: "Gold 18K Ring",
+    name: "Ring",
     img: [jewelleryRing37],
     type: "ring",
     carat: 18,
@@ -869,7 +868,7 @@ export const items = [
   },
   {
     id: "item-34",
-    name: "Pearl Bracelet",
+    name: "Bracelet",
     img: [jewelleryBracelet7],
     type: "bracelet",
     carat: 18,
@@ -1428,7 +1427,7 @@ export const items = [
   },
   {
     id: "item-90",
-    name: "Diamond Earring",
+    name: "Earring",
     img: [jewelleryEarrings5],
     type: "earring",
     carat: 18,
@@ -1443,7 +1442,7 @@ export const items = [
   },
   {
     id: "item-91",
-    name: "Gold Earring",
+    name: "Earring",
     img: [jewelleryEarrings6],
     type: "earring",
     carat: 18,
@@ -1456,7 +1455,21 @@ export const items = [
     details:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
   },
- 
+  {
+    id: "item-92",
+    name: "Earring",
+    img: [jewelleryEarrings7],
+    type: "earring",
+    carat: 18,
+    weight: 45.04,
+    price: 45000,
+    isStock: false,
+    hasOffer: true,
+    offerPrice: 40000,
+    date: "2022-03-14",
+    details:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi libero quo tempora, eveniet eaque, dolor tempore enim beatae magnam magni doloremque facere illum voluptas unde?",
+  },
 ];
 
 export const jewelerySliderAssets = [
